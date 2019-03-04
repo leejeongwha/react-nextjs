@@ -1,0 +1,1722 @@
+@charset "utf-8";
+/* Common */
+.standardbox{width:960px;margin:0 auto;position:relative}
+/* 공통 header */
+#header{position:fixed;top:0;z-index:15;width:100%;height:120px}
+#header .lang_select{z-index:100}
+#container{height:auto}
+#content{height:auto}
+#content .cont{position:relative;width:1200px;height:100%;margin:0 auto}
+#content .cont p,#content .cont h2,#content .cont h3{text-indent:-9999px}
+#header .sub_tab{text-align:center;position:absolute;min-width:1200px;top:70px;left:0;right:0;width:100%;height:50px;line-height:50px;border-top:1px solid #b2b2b2;padding-bottom:1px;background:url(../img/bg_hd_160524.png) repeat-x 0 -70px}
+
+#header .sub_tab{text-align:center;position:absolute;min-width:1200px;top:70px;left:0;right:0;width:100%;height:50px;line-height:50px;border-top:1px solid #b2b2b2;padding-bottom:1px;background:url(../img/bg_hd_160524.png) repeat-x 0 -70px}
+#header .sub_tab .scroll{margin:0 auto;width:760px;height:50px}
+#header .sub_tab ul{overflow:hidden;margin:0 auto}
+#header .sub_tab li{display:block;float:left;;font-size:14px;text-align:center}
+#header .sub_tab li a{color:#000;display:block;height:100%;padding:0 20px 0 20px}
+#header .sub_tab li.on a,#header .sub_tab li a:hover{font-weight:bold;color:#009cff}
+#header .arrow_btn{position:absolute;width:850px;top:0;left:50%;margin-left:-425px;z-index:10}
+#header .arrow_btn a{display:block;overflow:hidden;position:absolute;top:0;width:34px;height:50px;background:url(../img/spr_v2.png) no-repeat;line-height:0;font-size:0}
+#header .arrow_btn .prev{left:0;background-position:13px -398px}
+#header .arrow_btn .next{right:0;background-position:-23px -398px}
+#header .all_event{position:absolute;width:1200px;top:0;left:50%;margin-left:-600px;text-align:right}
+#header .all_event .btn_ly{display:inlin-block;*display:inline;*zoom:1;text-align:right;padding:0 12px 0 0;font-size:13px;line-height:18px;color:#009cff;background:url(../img/spr_v2.png) no-repeat 100% -401px}
+#header .all_event.on .btn_ly{background-position:100% -422px}
+#header .all_event .evt_ly{display:none;position:absolute;top:54px;right:0;width:598px;background:#fff;border:1px solid #b2b2b2}
+#header .all_event .evt_ly ul{overflow:hidden;padding:18px 0 19px 0;text-align:left}
+#header .all_event .evt_ly ul li{float:left;width:50%;margin:4px 0 3px 0;text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+#header .all_event .evt_ly ul li a{display:block;font-size:13px;line-height:18px;padding:0 10px 0 25px;color:#009cff;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+#header .all_event .evt_ly .bar{display:block;position:absolute;top:25px;bottom:25px;left:50%;width:1px;margin-left:-1px;background-color:#e1e1e1}
+#header .all_event.on .evt_ly{display:block}
+
+/* v live+ event_160520 */
+.v_live_event_160520 #header{position:fixed;top:0;z-index:15;width:100%;height:120px}
+.v_live_event_160520 #header .lang_select{z-index:100}
+.v_live_event_160520 .sub_tab{background:#fff;background:url(../img/bg_hd_160524.png) repeat-x 0 -70px}
+.v_live_event_160520 #container{height:auto}
+.v_live_event_160520 #content{height:auto}
+.v_live_event_160520 #content .cont{position:relative;width:1200px;height:100%;margin:0 auto}
+.v_live_event_160520 #content .cont p,.v_live_event_160520 #content .cont h2,.v_live_event_160520 #content .cont h3{text-indent:-9999px}
+
+.v_live_event_160520 #content .section{height:851px;margin-top:50px;background:#32057c url(../img/event_160520/kr/sec_bg.jpg) no-repeat 50% 0}
+.v_live_event_160520 #content .section2{height:433px;background:#281b7f url(../img/event_160520/kr/sec2_bg.jpg) no-repeat 50% 0}
+.v_live_event_160520 #content .section3{height:513px;background:#fff url(../img/event_160520/kr/sec3_bg.jpg) no-repeat 50% 0}
+.v_live_event_160520 #content .section4{height:509px;background:#f0ede8 url(../img/event_160520/kr/sec4_bg.jpg) no-repeat 50% 0}
+.v_live_event_160520 #content .section5{position:relative;height:363px;background:#696661 url(../img/event_160520/kr/sec5_bg.jpg) no-repeat 50% 0}
+.v_live_event_160520 #content .section5 .exo_btn{display:block;position:absolute;top:170px;left:268px;width:664px;height:119px}
+.v_live_event_160520 #content .section6{height:631px;background:#9b9891 url(../img/event_160520/kr/sec6_bg.jpg) no-repeat 50% 0}
+
+/*en*/
+.en .v_live_event_160520 #content .section{margin-top:50px;background:#32057c url(../img/event_160520/en/en_sec_bg.jpg) no-repeat 50% 0}
+.en .v_live_event_160520 #content .section2{height:453px;background:#281b7f url(../img/event_160520/en/en_sec2_bg.jpg) no-repeat 50% 0}
+.en .v_live_event_160520 #content .section3{height:511px;background:#fff url(../img/event_160520/en/en_sec3_bg.jpg) no-repeat 50% 0}
+.en .v_live_event_160520 #content .section4{height:450px;background:#f0ede8 url(../img/event_160520/en/en_sec4_bg.jpg) no-repeat 50% 0}
+.en .v_live_event_160520 #content .section5{background:#696661 url(../img/event_160520/en/en_sec5_bg.jpg) no-repeat 50% 0}
+.en .v_live_event_160520 #content .section6{height:605px;background:#9b9891 url(../img/event_160520/en/en_sec6_bg.jpg) no-repeat 50% 0}
+
+/*ja*/
+.ja .v_live_event_160520 #content .section{margin-top:50px;background:#32057c url(../img/event_160520/ja/ja_sec_bg.jpg) no-repeat 50% 0}
+.ja .v_live_event_160520 #content .section2{height:443px;background:#281b7f url(../img/event_160520/ja/ja_sec2_bg.jpg) no-repeat 50% 0}
+.ja .v_live_event_160520 #content .section3{height:511px;background:#fff url(../img/event_160520/ja/ja_sec3_bg.jpg) no-repeat 50% 0}
+.ja .v_live_event_160520 #content .section4{height:510px;background:#f0ede8 url(../img/event_160520/ja/ja_sec4_bg.jpg) no-repeat 50% 0}
+.ja .v_live_event_160520 #content .section5{height:364px;background:#696661 url(../img/event_160520/ja/ja_sec5_bg.jpg) no-repeat 50% 0}
+.ja .v_live_event_160520 #content .section5 .exo_btn{display:block;position:absolute;top:170px;left:207px;width:784px;height:119px}
+.ja .v_live_event_160520 #content .section6{height:621px;background:#9b9891 url(../img/event_160520/ja/ja_sec6_bg.jpg) no-repeat 50% 0}
+
+
+/* v live+ event_160524 */
+
+/* 국문 */
+/* kr */
+.v_live_event_160524 #content .spot{height:497px;margin-top:120px;background:#1879e1 url(../img/event_160524/kr/bg_spot.jpg) no-repeat 50% 0}
+
+.v_live_event_160524 #content .section{position:relative;height:588px;background:#f7f9fb url(../img/event_160524/kr/img_section.jpg) no-repeat 50% 0}
+.v_live_event_160524 #content .section .info_btn, .v_live_event_160524 #content .section .info_btn2, .v_live_event_160524 #content .section .info_btn3{position:absolute;bottom:88px;left:50%;display:block;width:216px;height:50px}
+.v_live_event_160524 #content .section .info_btn{margin-left:-481px}
+.v_live_event_160524 #content .section .info_btn2{margin-left:-108px}
+.v_live_event_160524 #content .section .info_btn3{margin-left:264px}
+
+.v_live_event_160524 #content .section2{position:relative;height:831px;background:#f7f9fb url(../img/event_160524/kr/img_section2_v2.jpg) no-repeat 50% 0}
+.v_live_event_160524 #content .section2 .detail_btn{position:absolute;bottom:330px;left:50%;margin-left:140px;display:block;width:319px;height:72px}
+
+/* 영문 */
+/* en */
+[lang=en] .v_live_event_160524 #content .spot{height:497px;margin-top:120px;background:#1879e1 url(../img/event_160524/en/bg_spot_en.jpg) no-repeat 50% 0}
+
+[lang=en] .v_live_event_160524 #content .section{position:relative;height:588px;background:#f7f9fb url(../img/event_160524/en/img_section_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160524 #content .section .info_btn, .v_live_event_160524 #content .section .info_btn2, .v_live_event_160524 #content .section .info_btn3{position:absolute;bottom:88px;left:50%;display:block;width:216px;height:50px}
+[lang=en] .v_live_event_160524 #content .section .info_btn{margin-left:-481px}
+[lang=en] .v_live_event_160524 #content .section .info_btn2{margin-left:-108px}
+[lang=en] .v_live_event_160524 #content .section .info_btn3{margin-left:264px}
+
+[lang=en] .v_live_event_160524 #content .section2{position:relative;height:1024px;background:#f7f9fb url(../img/event_160524/en/img_section2_en_v2.png) no-repeat 50% 0}
+[lang=en] .v_live_event_160524 #content .section2 .detail_btn{position:absolute;bottom:513px;left:50%;margin-left:140px;display:block;width:319px;height:72px}
+[lang=en] .v_live_event_160524 #content .section2 .link{display:block;width:100px;height:20px;position:absolute;left:50%;bottom:199px;margin-left:-50px;font-size:0;line-height:0;overflow:hidden}
+
+/* 일본어 */
+[lang=ja] .v_live_event_160524 #content .spot{height:497px;margin-top:120px;background:#1879e1 url(../img/event_160524/ja/bg_spot_ja.jpg) no-repeat 50% 0}
+
+[lang=ja] .v_live_event_160524 #content .section{position:relative;height:588px;background:#f7f9fb url(../img/event_160524/ja/img_section_ja.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160524 #content .section .info_btn, .v_live_event_160524 #content .section .info_btn2, .v_live_event_160524 #content .section .info_btn3{position:absolute;bottom:88px;left:50%;display:block;width:216px;height:50px}
+[lang=ja] .v_live_event_160524 #content .section .info_btn{margin-left:-481px}
+[lang=ja] .v_live_event_160524 #content .section .info_btn2{margin-left:-108px}
+[lang=ja] .v_live_event_160524 #content .section .info_btn3{margin-left:264px}
+
+[lang=ja] .v_live_event_160524 #content .section2{position:relative;height:894px;background:#f7f9fb url(../img/event_160524/ja/img_section2_ja_v2.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160524 #content .section2 .detail_btn{position:absolute;bottom:383px;left:50%;margin-left:140px;display:block;width:319px;height:72px}
+
+
+/* v live+ event_160531 */
+.v_live_event_160531 #header {
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    height: 120px;
+}
+.v_live_event_160531 .article{
+    position: relative;
+    width: 1025px;
+    height: 100%;
+    margin: 0 auto;
+}
+.v_live_event_160531 .section{
+    margin-top: 120px;
+}
+.v_live_event_160531 .section2_img{
+    position: absolute;
+    top: -22px;
+    left: 2px;
+    width: 1020px;
+    height: 408px;
+    z-index: 2;
+}
+.v_live_event_160531 .section3{
+    position: relative;
+}
+.btn_section3_btshome{
+    position: absolute;
+    left: 50%;
+    width: 560px;
+    height: 120px;
+    margin-left: -280px;
+}
+
+[lang=ko] .v_live_event_160531 .section{
+    height: 1013px;
+    background:#fff url(../img/event_160531/kr/bg_sec.png) 50% 0 no-repeat;
+}
+[lang=ko] .v_live_event_160531 .section2{
+    height: 364px;
+    background:url(../img/event_160531/kr/bg_sec2.png) 0 0 repeat-x
+}
+[lang=ko] .v_live_event_160531 .section2 .article{
+    background: url(../img/event_160531/kr/t_sec2.png) 32px 45px no-repeat;
+}
+[lang=ko] .v_live_event_160531 .section2_img{
+    background: url(../img/event_160531/kr/i_sec2.png) 0 0 no-repeat;
+}
+[lang=ko] .v_live_event_160531 .section3{
+    height: 1356px;
+    background: url(../img/event_160531/kr/bg_sec3.png) 0 0 repeat-x;
+}
+[lang=ko] .v_live_event_160531 .section3 .article{
+    background: url(../img/event_160531/kr/i_sec3.png) 50% 105px no-repeat;
+}
+[lang=ko] .btn_section3_view{
+    position: absolute;
+    top: 413px;
+    left: 720px;
+    width: 60px;
+    height: 16px;
+}
+[lang=ko] .btn_section3_btshome{
+    bottom: 80px;
+}
+[lang=ko] .v_live_event_160531 .section4{
+    height: 555px;
+    background: url(../img/event_160531/kr/t_sec4.png) 50% 81px no-repeat;
+}
+
+[lang=en] .v_live_event_160531 .section{
+    height: 1013px;
+    background:#fff url(../img/event_160531/en/bg_sec.png) 50% 0 no-repeat;
+}
+[lang=en] .v_live_event_160531 .section2{
+    height: 364px;
+    background:url(../img/event_160531/en/bg_sec2.png) 0 0 repeat-x
+}
+[lang=en] .v_live_event_160531 .section2 .article{
+    background: url(../img/event_160531/en/t_sec2.png) 32px 34px no-repeat;
+}
+[lang=en] .v_live_event_160531 .section2_img{
+    background: url(../img/event_160531/en/i_sec2.png) 0 0 no-repeat;
+}
+[lang=en] .v_live_event_160531 .section3{
+    height: 1373px;
+    background: url(../img/event_160531/en/bg_sec3.png) 0 0 repeat-x;
+}
+[lang=en] .v_live_event_160531 .section3 .article{
+    background: url(../img/event_160531/en/i_sec3.png) 50% 104px no-repeat;
+}
+[lang=en] .btn_section3_view{
+    position: absolute;
+    top: 434px;
+    left: 808px;
+    width: 45px;
+    height: 16px;
+}
+[lang=en] .btn_section3_btshome{
+    bottom: 80px;
+}
+[lang=en] .v_live_event_160531 .section4{
+    height: 589px;
+    background: url(../img/event_160531/en/t_sec4.png) 50% 80px no-repeat;
+}
+
+[lang=ja] .v_live_event_160531 .section{
+    height: 1013px;
+    background:#fff url(../img/event_160531/ja/bg_sec.png) 50% 0 no-repeat;
+}
+[lang=ja] .v_live_event_160531 .section2{
+    height: 364px;
+    background:url(../img/event_160531/ja/bg_sec2.png) 0 0 repeat-x
+}
+[lang=ja] .v_live_event_160531 .section2 .article{
+    background: url(../img/event_160531/ja/t_sec2.png) 32px 48px no-repeat;
+}
+[lang=ja] .v_live_event_160531 .section2_img{
+    background: url(../img/event_160531/ja/i_sec2.png) 0 0 no-repeat;
+}
+[lang=ja] .v_live_event_160531 .section3{
+    height: 1356px;
+    background: url(../img/event_160531/ja/bg_sec3.png) 0 0 repeat-x;
+}
+[lang=ja] .v_live_event_160531 .section3 .article{
+    background: url(../img/event_160531/ja/i_sec3.png) 50% 110px no-repeat;
+}
+[lang=ja] .btn_section3_btshome{
+    bottom: 77px;
+}
+[lang=ja] .v_live_event_160531 .section4{
+    height: 589px;
+    background: url(../img/event_160531/ja/t_sec4.png) 50% 80px no-repeat;
+}
+
+/* v live+ event_160608 */
+/* 공통 */
+.v_live_event_160608 .bg_left{position:absolute;height:497px;background:url(../img/event_160608/bg_spot_left.jpg) repeat-x;width:50%}
+.v_live_event_160608 .bg_right{position:absolute;height:497px;background:url(../img/event_160608/bg_spot_right.jpg) repeat-x;width:50%;margin-left:50%}
+.v_live_event_160608 .section .btn_section,.v_live_event_160608 .section2 .btn_section2,.v_live_event_160608 .section3 .btn_section3{display:block;width:280px;height:60px;position:absolute;left:50%;margin-left:-141px}
+.v_live_event_160608 .spot{margin-top:120px}
+
+/* 국문 */
+/* kr */
+.v_live_event_160608 .spot{position:relative;height:497px;background:url(../img/event_160608/kr/img_spot.jpg) no-repeat 50% 0}
+.v_live_event_160608 .section{position:relative;height:848px;background:#f7f9fb url(../img/event_160608/kr/img_section.jpg) no-repeat 50% 0}
+.v_live_event_160608 .section .btn_section{top:594px}
+.v_live_event_160608 .section2{position:relative;height:810px;background:#f7f9fb url(../img/event_160608/kr/img_section2.jpg) no-repeat 50% 0}
+.v_live_event_160608 .section2 .btn_section2{top:671px}
+.v_live_event_160608 .section3{position:relative;height:831px;background:#f7f9fb url(../img/event_160608/kr/img_section3.jpg) no-repeat 50% 0}
+.v_live_event_160608 .section3 .btn_section3{top:621px}
+.v_live_event_160608 .detail{position:relative;height:145px;background:#3a4550 url(../img/event_160608/kr/img_more.jpg) no-repeat 50% 0}
+.v_live_event_160608 .detail .btn_detail{display:block;width:76px;height:17px;position:absolute;bottom:49px;left:50%;margin-left:-34px}
+
+/* 영문 */
+/* en */
+[lang=en] .v_live_event_160608 .spot{position:relative;height:497px;background:url(../img/event_160608/en/img_spot_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160608 .section{position:relative;height:848px;background:#f7f9fb url(../img/event_160608/en/img_section_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160608 .section .btn_section{top:594px}
+[lang=en] .v_live_event_160608 .section2{position:relative;height:810px;background:#f7f9fb url(../img/event_160608/en/img_section2_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160608 .section2 .btn_section2{top:671px}
+[lang=en] .v_live_event_160608 .section3{position:relative;height:831px;background:#f7f9fb url(../img/event_160608/en/img_section3_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160608 .section3 .btn_section3{top:621px}
+[lang=en] .v_live_event_160608 .detail{position:relative;height:145px;background:#3a4550 url(../img/event_160608/en/img_more_en.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160608 .detail .btn_detail{display:block;width:92px;height:18px;position:absolute;bottom:29px;left:50%;margin-left:-44px}
+
+/* 일어 */
+/* ja */
+[lang=ja] .v_live_event_160608 .spot{position:relative;height:497px;background:#00e681 url(../img/event_160608/ja/img_spot_ja.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160608 .section{position:relative;height:848px;background:#f7f9fb url(../img/event_160608/ja/img_section_ja.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160608 .section .btn_section{top:593px}
+[lang=ja] .v_live_event_160608 .section2{position:relative;height:810px;background:#f7f9fb url(../img/event_160608/ja/img_section2_ja.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160608 .section2 .btn_section2{top:671px}
+[lang=ja] .v_live_event_160608 .section3{position:relative;height:831px;background:#f7f9fb url(../img/event_160608/ja/img_section3_ja.jpg) no-repeat 50% 0;padding-bottom:30px}
+[lang=ja] .v_live_event_160608 .section3 .btn_section3{top:620px}
+
+/* v_live_twice_160708.html*/
+/* kr */
+.v_live_event_160708 #content{padding-top:122px}
+.v_live_event_160708 .spot{height:880px;background:#ffd7e0 url(../img/event_160726/kr/bg_spot.jpg) no-repeat 50% 0}
+.v_live_event_160708 .section{position:relative;height:253px;background:#fff5d1 url(../img/event_160726/kr/bg_content.jpg) no-repeat 50% 0}
+.v_live_event_160708 .section2{position:relative;height:900px;background:#ff6581 url(../img/event_160726/kr/bg_content2_v3.jpg) no-repeat 50% 0}
+.v_live_event_160708 .section2 [class*=lk_]{overflow:hidden;position:absolute;bottom:234px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+.v_live_event_160708 .section2 .lk_chat{margin-left:4px}
+.v_live_event_160708 .section3{height:691px;background:#f5f5f5 url(../img/event_160726/kr/bg_content3.jpg) no-repeat 50% 0}
+
+/* 영문 */
+/* en */
+[lang=en] .v_live_event_160708 .spot{height:880px;background:#ffd7e0 url(../img/event_160726/en/bg_spot.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160708 .section{position:relative;height:253px;background:#fff5d1 url(../img/event_160726/en/bg_content.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160708 .section2{position:relative;height:900px;background:#ff6581 url(../img/event_160726/en/bg_content2_v3.jpg) no-repeat 50% 0}
+[lang=en] .v_live_event_160708 .section2 [class*=lk_]{overflow:hidden;position:absolute;bottom:234px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+[lang=en] .v_live_event_160708 .section2 .lk_chat{margin-left:4px}
+[lang=en] .v_live_event_160708 .section3{height:691px;background:#f5f5f5 url(../img/event_160726/en/bg_content3.jpg) no-repeat 50% 0}
+
+/* 일어 */
+/* ja */
+[lang=ja] .v_live_event_160708 .spot{height:880px;background:#ffd7e0 url(../img/event_160726/ja/bg_spot.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160708 .section{position:relative;height:253px;background:#fff5d1 url(../img/event_160726/ja/bg_content.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160708 .section2{position:relative;height:900px;background:#ff6581 url(../img/event_160726/ja/bg_content2_v3.jpg) no-repeat 50% 0}
+[lang=ja] .v_live_event_160708 .section2 [class*=lk_]{overflow:hidden;position:absolute;bottom:234px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+[lang=ja] .v_live_event_160708 .section2 .lk_chat{margin-left:4px}
+[lang=ja] .v_live_event_160708 .section3{height:691px;background:#f5f5f5 url(../img/event_160726/ja/bg_content3.jpg) no-repeat 50% 0}
+
+
+/* v_live_B.A.P_160721.html*/
+/* kr */
+.event_160721 #content{padding-top:122px}
+.event_160721 .spot{height:1133px;background:#ede8db url(../img/event_160721/kr/bg_spot.jpg) no-repeat 50% 0}
+.event_160721 .section{position:relative;height:890px;background:#66d6c0 url(../img/event_160721/kr/bg_content.png) no-repeat 50% 0}
+.event_160721 .section [class*=lk_]{overflow:hidden;position:absolute;bottom:225px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+.event_160721 .section .lk_chat{margin-left:4px}
+.event_160721 .section2{position:relative;height:737px;background:#f5f5f5 url(../img/event_160721/kr/bg_content2.png) no-repeat 50% 0}
+
+/* 영문 */
+/* en */
+[lang=en] .event_160721 .spot{height:1133px;background:#ede8db url(../img/event_160721/en/bg_spot.jpg) no-repeat 50% 0}
+[lang=en] .event_160721 .section{position:relative;height:890px;background:#66d6c0 url(../img/event_160721/en/bg_content.png) no-repeat 50% 0}
+[lang=en] .event_160721 .section [class*=lk_]{overflow:hidden;position:absolute;bottom:225px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+[lang=en] .event_160721 .section .lk_chat{margin-left:4px}
+[lang=en] .event_160721 .section2{position:relative;height:737px;background:#f5f5f5 url(../img/event_160721/en/bg_content2.png) no-repeat 50% 0}
+
+/* 일어 */
+/* ja */
+[lang=ja] .event_160721 .spot{height:1133px;background:#ede8db url(../img/event_160721/ja/bg_spot.jpg) no-repeat 50% 0}
+[lang=ja] .event_160721 .section{position:relative;height:890px;background:#66d6c0 url(../img/event_160721/ja/bg_content.png) no-repeat 50% 0}
+[lang=ja] .event_160721 .section [class*=lk_]{overflow:hidden;position:absolute;bottom:223px;left:50%;width:390px;height:94px;margin-left:-396px;line-height:1000px;color:transparent}
+[lang=ja] .event_160721 .section .lk_chat{margin-left:4px}
+[lang=ja] .event_160721 .section2{height:737px;background:#f5f5f5 url(../img/event_160721/ja/bg_content2.png) no-repeat 50% 0}
+
+/* v_live_B.A.P_160727html*/
+/* kr */
+#wrap.event_160727{min-width:1200px;min-height:1512px;background:#fff6d0 url(../img/event_160727/kr/bg_content.png) no-repeat 50% 122px}
+.event_160727 #content{padding-top:122px}
+.event_160727 .spot{height:510px;background:url(../img/event_160727/kr/bg_spot.png) no-repeat 50% 0}
+.event_160727 .section{position:relative;height:880px;background:url(../img/event_160727/kr/bg_evt.png) no-repeat 50% 0}
+.event_160727 .section .btn_purchase{overflow:hidden;position:absolute;top:193px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+.event_160727 .section2{position:relative;height:280px;background:#fff url(../img/event_160727/kr/bg_footer.png) no-repeat 50% 0}
+.event_160727 .section2 .link{overflow:hidden;position:absolute;bottom:115px;left:50%;width:89px;height:22px;margin-left:118px;line-height:1000px;color:transparent}
+
+/* en */
+[lang=en] #wrap.event_160727{min-width:1200px;min-height:1512px;background:#fff6d0 url(../img/event_160727/kr/bg_content.png) no-repeat 50% 122px}
+[lang=en] .event_160727 #content{padding-top:122px}
+[lang=en] .event_160727 .spot{height:510px;background:url(../img/event_160727/en/bg_spot.png) no-repeat 50% 0}
+[lang=en] .event_160727 .section{position:relative;height:880px;background:url(../img/event_160727/en/bg_evt.png) no-repeat 50% 0}
+[lang=en] .event_160727 .section .btn_purchase{overflow:hidden;position:absolute;top:193px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=en] .event_160727 .section2{position:relative;height:280px;background:#fff url(../img/event_160727/en/bg_footer.png) no-repeat 50% 0}
+[lang=en] .event_160727 .section2 .link{overflow:hidden;position:absolute;bottom:109px;left:50%;width:89px;height:22px;margin-left:253px;line-height:1000px;color:transparent}
+
+/* ja */
+[lang=ja] #wrap.event_160727{min-width:1200px;min-height:1283px;background:#fff6d0 url(../img/event_160727/ja/bg_content.png) no-repeat 50% 122px}
+[lang=ja] .event_160727 #content{padding-top:122px}
+[lang=ja] .event_160727 .spot{height:510px;background:url(../img/event_160727/ja/bg_spot.png) no-repeat 50% 0}
+[lang=ja] .event_160727 .section{position:relative;height:773px;background:#fff6d0 url(../img/event_160727/ja/bg_evt.png) no-repeat 50% 0}
+[lang=ja] .event_160727 .section .btn_purchase{overflow:hidden;position:absolute;top:193px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=ja] .event_160727 .section2{position:relative;height:280px;background:#fff url(../img/event_160727/ja/bg_footer.png) no-repeat 50% 0}
+[lang=ja] .event_160727 .section2 .link{overflow:hidden;position:absolute;bottom:119px;left:50%;width:89px;height:22px;margin-left:118px;line-height:1000px;color:transparent}
+
+/* v_live_bigbang_160803html*/
+/* kr */
+#wrap.event_160803{min-width:1200px;min-height:1512px;background:#181a21 url(../img/event_160803/kr/bg_content.jpg) no-repeat 50% 122px}
+.event_160803 #content{padding-top:122px}
+.event_160803 .spot{height:880px}
+.event_160803 .section{position:relative;height:253px;background:#c0e5f8 url(../img/event_160803/kr/sec_title.png) no-repeat 50% 0}
+.event_160803 .section2{position:relative;height:900px;background:#4366d8 url(../img/event_160803/kr/sec2_content.png) no-repeat 50% 0}
+.event_160803 .section2 .btn_area{position:absolute;bottom:231px;left:50%;margin-left:-395px}
+.event_160803 .section2 a{display:inline-block;width:390px;height:94px;margin-right:5px}
+.event_160803 .section3{position:relative;height:691px;background:#fff url(../img/event_160803/kr/bg_footer.png) no-repeat 50% 0}
+
+/* en */
+[lang=en] #wrap.event_160803{min-width:1200px;min-height:1512px;background:#181a21 url(../img/event_160803/en/bg_content.jpg) no-repeat 50% 122px}
+[lang=en] .event_160803 #content{padding-top:122px}
+[lang=en] .event_160803 .spot{height:880px}
+[lang=en] .event_160803 .section{position:relative;height:253px;background:#c0e5f8 url(../img/event_160803/en/sec_title.png) no-repeat 50% 0}
+[lang=en] .event_160803 .section2{position:relative;height:900px;background:#4366d8 url(../img/event_160803/en/sec2_content.png) no-repeat 50% 0}
+[lang=en] .event_160803 .section2 .btn_area{position:absolute;bottom:231px;left:50%;margin-left:-395px}
+[lang=en] .event_160803 .section2 a{display:inline-block;width:390px;height:94px;margin-right:5px}
+[lang=en] .event_160803 .section3{position:relative;height:691px;background:#fff url(../img/event_160803/en/bg_footer.png) no-repeat 50% 0}
+
+/* ja */
+[lang=ja] #wrap.event_160803{min-width:1200px;min-height:1512px;background:#181a21 url(../img/event_160803/ja/bg_content.jpg) no-repeat 50% 122px}
+[lang=ja] .event_160803 #content{padding-top:122px}
+[lang=ja] .event_160803 .spot{height:880px}
+[lang=ja] .event_160803 .section{position:relative;height:253px;background:#c0e5f8 url(../img/event_160803/ja/sec_title.png) no-repeat 50% 0}
+[lang=ja] .event_160803 .section2{position:relative;height:900px;background:#4366d8 url(../img/event_160803/ja/sec2_content.png) no-repeat 50% 0}
+[lang=ja] .event_160803 .section2 .btn_area{position:absolute;bottom:221px;left:50%;margin-left:-395px}
+[lang=ja] .event_160803 .section2 a{display:inline-block;width:390px;height:94px;margin-right:5px}
+[lang=ja] .event_160803 .section3{position:relative;height:691px;background:#fff url(../img/event_160803/ja/bg_footer.png) no-repeat 50% 0}
+
+/* twice_160803 html*/
+/* kr */
+#wrap.twice_event_160803{min-width:1200px;min-height:1670px;background:#ffd7e0 url(../img/event_twice_160803/kr/bg_content.png) no-repeat 50% 122px}
+.twice_event_160803 #content{padding-top:122px}
+.twice_event_160803 .spot{height:509px;background:url(../img/event_twice_160803/kr/bg_spot.png) no-repeat 50% 0}
+.twice_event_160803 .section{position:relative;height:881px;background:url(../img/event_twice_160803/kr/bg_evt.png) no-repeat 50% 0}
+.twice_event_160803 .section .btn_purchase{overflow:hidden;position:absolute;top:373px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+.twice_event_160803 .section .btn{overflow:hidden;position:absolute;top:238px;left:50%;width:214px;height:67px;margin-left:133px;line-height:1000px;color:transparent}
+.twice_event_160803 .section .btn.v2{top:587px;margin-left:126px}
+.twice_event_160803 .section2{position:relative;height:279px;background:#fff url(../img/event_twice_160803/kr/bg_footer.png) no-repeat 50% 0}
+.twice_event_160803 .section2 .link{overflow:hidden;position:absolute;bottom:115px;left:50%;width:89px;height:22px;margin-left:118px;line-height:1000px;color:transparent}
+
+/* en */
+[lang=en] #wrap.twice_event_160803{min-width:1200px;min-height:1670px;background:#ffd7e0 url(../img/event_twice_160803/kr/bg_content.png) no-repeat 50% 122px}
+[lang=en] .twice_event_160803 #content{padding-top:122px}
+[lang=en] .twice_event_160803 .spot{height:510px;background:url(../img/event_twice_160803/en/bg_spot.png) no-repeat 50% 0}
+[lang=en] .twice_event_160803 .section{position:relative;height:879px;background:url(../img/event_twice_160803/en/bg_evt.png) no-repeat 50% 0}
+[lang=en] .twice_event_160803 .section .btn_purchase{overflow:hidden;position:absolute;top:373px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=en] .twice_event_160803 .section2{position:relative;height:280px;background:#fff url(../img/event_twice_160803/en/bg_footer.png) no-repeat 50% 0}
+[lang=en] .twice_event_160803 .section2 .link{overflow:hidden;position:absolute;bottom:109px;left:50%;width:89px;height:22px;margin-left:253px;line-height:1000px;color:transparent}
+
+/* ja */
+[lang=ja] #wrap.twice_event_160803{min-width:1200px;min-height:1670px;background:#ffd7e0 url(../img/event_twice_160803/ja/bg_content.png) no-repeat 50% 122px}
+[lang=ja] .twice_event_160803 #content{padding-top:122px}
+[lang=ja] .twice_event_160803 .spot{height:510px;background:url(../img/event_twice_160803/ja/bg_spot.png) no-repeat 50% 0}
+[lang=ja] .twice_event_160803 .section{position:relative;height:880px;background:#ffd7e0 url(../img/event_twice_160803/ja/bg_evt.png) no-repeat 50% 0}
+[lang=ja] .twice_event_160803 .section .btn_purchase{overflow:hidden;position:absolute;top:373px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=ja] .twice_event_160803 .section2{position:relative;height:280px;background:#fff url(../img/event_twice_160803/ja/bg_footer.png) no-repeat 50% 0}
+[lang=ja] .twice_event_160803 .section2 .link{overflow:hidden;position:absolute;bottom:119px;left:50%;width:89px;height:22px;margin-left:118px;line-height:1000px;color:transparent}
+
+/* bigbang_160810 html*/
+/* kr */
+#wrap.bigbang_160810{min-width:1200px;min-height:2102px;background-color:#151515}
+#wrap.bigbang_160810 .bg01{position:absolute;width:100%;height:546px;top:122px;left:0;right:0;background:url(../img/event_160810/kr/bg_content01.jpg) no-repeat 50% 0}
+#wrap.bigbang_160810 .bg02{position:absolute;width:100%;height:506px;top:668px;left:0;right:0;background:url(../img/event_160810/kr/bg_content02.jpg) no-repeat 50% 0}
+#wrap.bigbang_160810 .bg03{position:absolute;width:100%;height:719px;top:1174px;left:0;right:0;background:url(../img/event_160810/kr/bg_content03_v2.jpg) no-repeat 50% 0}
+.bigbang_160810 #content{position:relative;padding-top:122px;z-index:10}
+.bigbang_160810 .spot{height:510px;background:url(../img/event_160810/kr/bg_spot.png) no-repeat 50% 0}
+.bigbang_160810 .section{position:relative;height:1261px;background:url(../img/event_160810/kr/bg_evt_v4.png) no-repeat 50% 0}
+.bigbang_160810 .section .btn_purchase{overflow:hidden;position:absolute;top:368px;left:50%;width:336px;height:82px;margin-left:-166px;line-height:1000px;color:transparent}
+.bigbang_160810 .section .input_btn{overflow:hidden;position:absolute;top:309px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+.bigbang_160810 .section .btn{overflow:hidden;position:absolute;top:191px;left:50%;width:170px;height:59px;margin-left:225px;line-height:1000px;color:transparent}
+.bigbang_160810 .section .btn.v2{top:722px;margin-left:245px}
+.bigbang_160810 .section .btn.v3{top:991px;margin-left:245px}
+.bigbang_160810 .section2{position:relative;height:330px;background:#fff url(../img/event_160810/kr/bg_footer_v2.png) no-repeat 50% 0}
+.bigbang_160810 .section2 .link{overflow:hidden;position:absolute;bottom:135px;left:50%;width:132px;height:22px;margin-left:170px;line-height:1000px;color:transparent}
+
+/* ja */
+[lang=ja] #wrap.bigbang_160810{min-width:1200px;min-height:1318px;background-color:#151515}
+[lang=ja] #wrap.bigbang_160810 .bg01{position:absolute;width:100%;height:546px;top:122px;left:0;right:0;background:url(../img/event_160810/ja/bg_content01.jpg) no-repeat 50% 0}
+[lang=ja] #wrap.bigbang_160810 .bg02{position:absolute;width:100%;height:508px;top:668px;left:0;right:0;background:url(../img/event_160810/ja/bg_content02.jpg) no-repeat 50% 0}
+[lang=ja] .bigbang_160810 #content{position:relative;padding-top:122px;z-index:10}
+[lang=ja] .bigbang_160810 .spot{height:510px;background:url(../img/event_160810/ja/bg_spot_v2.png) no-repeat 50% 0}
+[lang=ja] .bigbang_160810 .section{position:relative;height:544px;background:url(../img/event_160810/ja/bg_evt.png) no-repeat 50% 0}
+[lang=ja] .bigbang_160810 .section .btn_purchase{overflow:hidden;position:absolute;top:270px;left:50%;width:237px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=ja] .bigbang_160810 .section2{position:relative;height:264px;background:#fff url(../img/event_160810/ja/bg_footer.png) no-repeat 50% 0}
+[lang=ja] .bigbang_160810 .section2 .link{overflow:hidden;position:absolute;bottom:115px;left:50%;width:132px;height:22px;margin-left:236px;line-height:1000px;color:transparent}
+
+/* en */
+[lang=en] #wrap.bigbang_160810{min-width:1200px;min-height:1894px;background-color:#151515}
+[lang=en] #wrap.bigbang_160810 .bg01{position:absolute;width:100%;height:491px;top:122px;left:0;right:0;background:url(../img/event_160810/en/bg_content01.jpg) no-repeat 50% 0}
+[lang=en] #wrap.bigbang_160810 .bg02{position:absolute;width:100%;height:545px;top:613px;left:0;right:0;background:url(../img/event_160810/en/bg_content02.jpg) no-repeat 50% 0}
+[lang=en] #wrap.bigbang_160810 .bg03{position:absolute;width:100%;height:735px;top:1158px;left:0;right:0;background:url(../img/event_160810/en/bg_content03_v2.jpg) no-repeat 50% 0}
+[lang=en] .bigbang_160810 #content{position:relative;padding-top:122px;z-index:10}
+[lang=en] .bigbang_160810 .spot{height:510px;background:url(../img/event_160810/en/bg_spot.png) no-repeat 50% 0}
+[lang=en] .bigbang_160810 .section{position:relative;height:1261px;background:url(../img/event_160810/en/bg_evt_v5.png) no-repeat 50% 0}
+[lang=en] .bigbang_160810 .section .btn_purchase{overflow:hidden;position:absolute;top:368px;left:50%;width:336px;height:82px;margin-left:-166px;line-height:1000px;color:transparent}
+[lang=en] .bigbang_160810 .section .input_btn{overflow:hidden;position:absolute;top:309px;left:50%;width:236px;height:82px;margin-left:-446px;line-height:1000px;color:transparent}
+[lang=en] .bigbang_160810 .section .btn{overflow:hidden;position:absolute;top:191px;left:50%;width:170px;height:59px;margin-left:225px;line-height:1000px;color:transparent}
+[lang=en] .bigbang_160810 .section .btn.v2{top:712px;margin-left:245px}
+[lang=en] .bigbang_160810 .section .btn.v3{top:981px;margin-left:245px}
+[lang=en] .bigbang_160810 .section2{position:relative;height:330px;background:#fff url(../img/event_160810/en/bg_footer_v2.png) no-repeat 50% 0}
+[lang=en] .bigbang_160810 .section2 .link{overflow:hidden;position:absolute;bottom:110px;left:50%;width:132px;height:22px;margin-left:274px;line-height:1000px;color:transparent}
+
+
+/* bigbang_161229 html*/
+/* kr */
+#wrap.bigbang_161226{min-width:1200px;min-height:2102px;background-color:#151515}
+#wrap.bigbang_161226 .bg01{position:absolute;width:100%;height:510px;top:122px;left:0;right:0;background:#151515 url(../img/event_161229/kr/bg_01.jpg) no-repeat 50% 0}
+#wrap.bigbang_161226 .bg02{position:absolute;width:100%;height:1595px;top:632px;left:0;right:0;background:#151515 url(../img/event_161229/kr/bg_02.jpg) no-repeat 50% 0}
+.bigbang_161226 #content{position:relative;padding-top:122px;z-index:10}
+.bigbang_161226 .spot{height:510px;background:url(../img/event_161229/kr/bg_spot.png) no-repeat 50% 0}
+.bigbang_161226 .section{position:relative;height:1595px;background:url(../img/event_161229/kr/bg_evt_v3.png) no-repeat 50% 0}
+.bigbang_161226 .section .btn_lk{overflow:hidden;position:absolute;top:885px;left:50%;width:236px;height:82px;margin-left:49px;line-height:1000px;color:transparent}
+.bigbang_161226 .section .btn_lk.v2{top:1370px;margin-left:151px}
+.bigbang_161226 .section2{position:relative;height:290px;background:url(../img/event_161229/kr/bg_evt2.jpg) no-repeat 50% 0}
+.bigbang_161226 .section2 .link{overflow:hidden;position:absolute;bottom:117px;left:50%;width:132px;height:22px;margin-left:113px;line-height:1000px;color:transparent}
+
+/* en */
+[lang=en] .bigbang_161226 .spot{height:510px;background:url(../img/event_161229/en/bg_spot.png) no-repeat 50% 0}
+[lang=en] .bigbang_161226 .section{position:relative;height:1595px;background:url(../img/event_161229/en/bg_evt_v4.png) no-repeat 50% 0}
+[lang=en] .bigbang_161226 .section2{position:relative;height:290px;background:url(../img/event_161229/en/bg_evt2.jpg) no-repeat 50% 0}
+[lang=en] .bigbang_161226 .section2 .link{bottom:105px;margin-left:146px}
+
+/* vi */
+[lang=vi] .bigbang_161226 .spot{height:510px;background:url(../img/event_161229/vi/bg_spot_v2.png) no-repeat 50% 0}
+[lang=vi] .bigbang_161226 .section{position:relative;height:1595px;background:url(../img/event_161229/vi/bg_evt_v5.png) no-repeat 50% 0}
+[lang=vi] .bigbang_161226 .section2{position:relative;height:290px;background:url(../img/event_161229/vi/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=vi] .bigbang_161226 .section2 .link{bottom:100px;margin-left:184px}
+
+/* tw */
+[lang=zh-tw] .bigbang_161226 .spot{height:510px;background:url(../img/event_161229/tw/bg_spot.png) no-repeat 50% 0}
+[lang=zh-tw] .bigbang_161226 .section{position:relative;height:1595px;background:url(../img/event_161229/tw/bg_evt_v4.png) no-repeat 50% 0}
+[lang=zh-tw] .bigbang_161226 .section2{position:relative;height:290px;background:url(../img/event_161229/tw/bg_evt2.jpg) no-repeat 50% 0}
+[lang=zh-tw] .bigbang_161226 .section2 .link{width:150px;bottom:117px;margin-left:94px}
+
+
+/* shinhwa_170315 html*/
+/* kr */
+.shinhwa_170315 #content{position:relative;padding-top:122px;z-index:10}
+.shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/kr/bg_spot.jpg) no-repeat 50% 0}
+.shinhwa_170315 .spot .lnk_home{position:absolute;top:36px;left:50%;margin-left:-480px;width:87px;height:20px}
+.shinhwa_170315 .section{position:relative;height:962px;background:#ffe4bc url(../img/event_170315/kr/bg_evt.jpg) no-repeat 50% 0}
+.shinhwa_170315 .btn_lk{overflow:hidden;position:absolute;top:410px;left:50%;width:377px;height:86px;margin-left:-189px;line-height:1000px;color:transparent}
+.shinhwa_170315 .section .btn_buy{overflow:hidden;position:absolute;top:735px;left:50%;width:171px;height:61px;margin-left:212px;line-height:1000px;color:transparent}
+.shinhwa_170315 .section2{position:relative;height:934px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/kr/bg_evt2_v2.jpg) no-repeat 50% 0}
+.shinhwa_170315 .section2 .btn_lk2{overflow:hidden;position:absolute;top:704px;left:50%;width:377px;height:86px;margin-left:-189px;line-height:1000px;color:transparent}
+.shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/kr/bg_evt3.jpg) no-repeat 50% 0}
+
+/* en */
+[lang=en] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/en/bg_spot.jpg) no-repeat 50% 0}
+[lang=en] .shinhwa_170315 .section{position:relative;height:962px;background:#ffe4bc url(../img/event_170315/en/bg_evt.jpg) no-repeat 50% 0}
+[lang=en] .shinhwa_170315 .section2{position:relative;height:934px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/en/bg_evt2_v3.jpg) no-repeat 50% 0}
+[lang=en] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/en/bg_evt3.jpg) no-repeat 50% 0}
+
+/* th - */
+[lang=th] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/th/bg_spot.jpg) no-repeat 50% 0}
+[lang=th] .shinhwa_170315 .section{position:relative;height:962px;background:#ffe4bc url(../img/event_170315/th/bg_evt.jpg) no-repeat 50% 0}
+[lang=th] .shinhwa_170315 .section2{position:relative;height:934px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/th/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=th] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/th/bg_evt3.jpg) no-repeat 50% 0}
+
+/* vi -베트남어 */
+[lang=vi] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/vi/bg_spot.jpg) no-repeat 50% 0}
+[lang=vi] .shinhwa_170315 .section{position:relative;height:992px;background:#ffe4bc url(../img/event_170315/vi/bg_evt.jpg) no-repeat 50% 0}
+[lang=vi] .shinhwa_170315 .btn_lk{overflow:hidden;position:absolute;top:440px;left:50%;width:377px;height:86px;margin-left:-189px;line-height:1000px;color:transparent}
+[lang=vi] .shinhwa_170315 .section .btn_buy{overflow:hidden;position:absolute;top:765px;left:50%;width:171px;height:61px;margin-left:212px;line-height:1000px;color:transparent}
+[lang=vi] .shinhwa_170315 .section2{position:relative;height:1024px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/vi/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=vi] .shinhwa_170315 .section2 .btn_lk2{overflow:hidden;position:absolute;top:794px;left:50%;width:436px;height:86px;margin-left:-219px;line-height:1000px;color:transparent}
+[lang=vi] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/vi/bg_evt3.jpg) no-repeat 50% 0}
+
+/* ja -일본어*/
+[lang=ja] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/ja/bg_spot.jpg) no-repeat 50% 0}
+[lang=ja] .shinhwa_170315 .section{position:relative;height:962px;background:#ffe4bc url(../img/event_170315/ja/bg_evt.jpg) no-repeat 50% 0}
+[lang=ja] .shinhwa_170315 .section2{position:relative;height:934px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/ja/bg_evt2_v3.jpg) no-repeat 50% 0}
+[lang=ja] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/ja/bg_evt3.jpg) no-repeat 50% 0}
+
+/* es -스페인어*/
+[lang=es] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/es/bg_spot.jpg) no-repeat 50% 0}
+[lang=es] .shinhwa_170315 .section{position:relative;height:962px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/es/bg_evt.jpg) no-repeat 50% 0}
+[lang=es] .shinhwa_170315 .section2{position:relative;height:934px;background:#ffe4bc url(../img/event_170315/es/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=es] .shinhwa_170315 .section3{position:relative;height:199px;background:#fff url(../img/event_170315/es/bg_evt3.jpg) no-repeat 50% 0}
+
+/* zh-hans -중국간체 */
+[lang=zh-Hans] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/zh-hans/bg_spot.jpg) no-repeat 50% 0}
+[lang=zh-Hans] .shinhwa_170315 .section{position:relative;height:962px;background:#ffe4bc url(../img/event_170315/zh-hans/bg_evt.jpg) no-repeat 50% 0}
+[lang=zh-Hans] .shinhwa_170315 .section2{position:relative;height:934px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/zh-hans/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=zh-Hans] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/zh-hans/bg_evt3.jpg) no-repeat 50% 0}
+
+/* zh-hant -중국번체 */
+[lang=zh-Hant] .shinhwa_170315 .spot{position:relative;height:529px;background:#ffe4bc url(../img/event_170315/zh-hant/bg_spot.jpg) no-repeat 50% 0}
+[lang=zh-Hant] .shinhwa_170315 .section{position:relative;height:962px;margin-top:-22px;background:#ffe4bc url(../img/event_170315/zh-hant/bg_evt.jpg) no-repeat 50% 0}
+[lang=zh-Hant] .shinhwa_170315 .section2{position:relative;height:934px;background:#ffe4bc url(../img/event_170315/zh-hant/bg_evt2_v2.jpg) no-repeat 50% 0}
+[lang=zh-Hant] .shinhwa_170315 .section3{position:relative;height:183px;background:#fff url(../img/event_170315/zh-hant/bg_evt3.jpg) no-repeat 50% 0}
+
+
+/* hi_170516 */
+/* kr - 국문 */
+.hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+.hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/kr/bg_spot.jpg) 50% 0 no-repeat}
+.hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+.hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/kr/bg_evt.jpg) 50% 0 no-repeat}
+.hi_170516 .evt.off{display:none}
+.hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+.hi_170516 .footer{height:183px;background:url(../img/event_170516/kr/bg_footer.jpg) 50% 0 no-repeat}
+
+/* zh-Hans - 중국간체 */
+[lang=zh-Hans] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=zh-Hans] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/zh_hans/bg_spot.jpg) 50% 0 no-repeat}
+[lang=zh-Hans] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=zh-Hans] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/zh_hans/bg_evt.jpg) 50% 0 no-repeat}
+[lang=zh-Hans] .hi_170516 .evt.off{display:none}
+[lang=zh-Hans] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=zh-Hans] .hi_170516 .footer{height:183px;background:url(../img/event_170516/zh_hans/bg_footer.jpg) 50% 0 no-repeat}
+
+/* es - 스페인어 */
+[lang=es] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=es] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/es/bg_spot.jpg) 50% 0 no-repeat}
+[lang=es] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=es] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/es/bg_evt.jpg) 50% 0 no-repeat}
+[lang=es] .hi_170516 .evt.off{display:none}
+[lang=es] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=es] .hi_170516 .footer{height:183px;background:url(../img/event_170516/es/bg_footer.jpg) 50% 0 no-repeat}
+
+/* th - 태국어 */
+[lang=th] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=th] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/th/bg_spot.jpg) 50% 0 no-repeat}
+[lang=th] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=th] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/th/bg_evt.jpg) 50% 0 no-repeat}
+[lang=th] .hi_170516 .evt.off{display:none}
+[lang=th] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=th] .hi_170516 .footer{height:183px;background:url(../img/event_170516/th/bg_footer.jpg) 50% 0 no-repeat}
+
+/* en - 영어 */
+[lang=en] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=en] .hi_170516 .spot{height:1251px;background:#323334 url(../img/event_170516/en/bg_spot.jpg) 50% 0 no-repeat}
+[lang=en] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1027px;left:292px}
+[lang=en] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/en/bg_evt.jpg) 50% 0 no-repeat}
+[lang=en] .hi_170516 .evt.off{display:none}
+[lang=en] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=en] .hi_170516 .footer{height:183px;background:url(../img/event_170516/en/bg_footer.jpg) 50% 0 no-repeat}
+
+/* ja - 일본어 */
+[lang=ja] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=ja] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/ja/bg_spot.jpg) 50% 0 no-repeat}
+[lang=ja] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=ja] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/ja/bg_evt.jpg) 50% 0 no-repeat}
+[lang=ja] .hi_170516 .evt.off{display:none}
+[lang=ja] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=ja] .hi_170516 .footer{height:183px;background:url(../img/event_170516/ja/bg_footer.jpg) 50% 0 no-repeat}
+
+/* zh_hant - 중국어 번체 */
+[lang=zh-hant] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=zh-hant] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/zh-hant/bg_spot.jpg) 50% 0 no-repeat}
+[lang=zh-hant] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=zh-hant] .hi_170516 .evt{height:985px;background:#323334 url(../img/event_170516/zh-hant/bg_evt.jpg) 50% 0 no-repeat}
+[lang=zh-hant] .hi_170516 .evt.off{display:none}
+[lang=zh-hant] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:763px;left:292px}
+[lang=zh-hant] .hi_170516 .footer{height:183px;background:url(../img/event_170516/zh-hant/bg_footer.jpg) 50% 0 no-repeat}
+
+/* vi - 베트남어 */
+[lang=vi] .hi_170516 #content{position:relative;padding-top:122px;z-index:10}
+[lang=vi] .hi_170516 .spot{height:1226px;background:#323334 url(../img/event_170516/vi/bg_spot.jpg) 50% 0 no-repeat}
+[lang=vi] .hi_170516 .spot .btn{width:374px;height:82px;position:absolute;top:1003px;left:292px}
+[lang=vi] .hi_170516 .evt{height:1085px;background:#323334 url(../img/event_170516/vi/bg_evt.jpg) 50% 0 no-repeat}
+[lang=vi] .hi_170516 .evt.off{display:none}
+[lang=vi] .hi_170516 .evt .btn{width:374px;height:86px;position:absolute;top:863px;left:292px}
+[lang=vi] .hi_170516 .footer{height:183px;background:url(../img/event_170516/vi/bg_footer.jpg) 50% 0 no-repeat}
+
+/* taigi_170605 */
+/* kr - 국문 */
+.taigi_170605 #content{position:relative;padding-top:122px;z-index:10}
+.taigi_170605 .spot{height:1623px;background:#22201f url(../img/event_170605/kr/bg_spot.jpg) 50% 0 no-repeat}
+.taigi_170605 .spot .tab_area .btn_box{position:absolute;top:14px;left:3px}
+.taigi_170605 .spot .tab_area .btn_box li{width:290px;height:113px;display:block;float:left;box-sizing:border-box}
+.taigi_170605 .spot .tab_area .btn_box li a{display:block;width:100%;height:100%}
+.taigi_170605 .spot .tab_area{position:absolute;top:549px;left:42px}
+.taigi_170605 .spot .tab_area li{display:none}
+.taigi_170605 .spot .tab_area .on{display:block}
+.taigi_170605 .spot .tab_area .tab1 .btn{width:334px;height:91px;position:absolute;top:791px;left:269px}
+.taigi_170605 .evt{height:1061px;background:#22201f url(../img/event_170605/kr/bg_evt.jpg) 50% 0 no-repeat}
+.taigi_170605 .evt .btn{width:334px;height:93px;position:absolute;top:819px;left:311px;background:url(../img/event_170605/kr/img_evt_btn.png) no-repeat;display:none}
+.taigi_170605 .evt .btn.v2{background:url(../img/event_170605/kr/img_evt_btn2.png) no-repeat}
+.taigi_170605 .evt .btn.on{display:block}
+.taigi_170605 .footer{height:170px;background:url(../img/event_170605/kr/bg_footer.jpg) 50% 0 no-repeat}
+
+/* en - 영어 */
+[lang=en] .taigi_170605 .spot{height:1775px;background:#22201f url(../img/event_170605/en/bg_spot.jpg) 50% 0 no-repeat}
+[lang=en] .taigi_170605 .spot .tab_area .tab1 .btn{width:334px;height:91px;position:absolute;top:811px;left:269px}
+[lang=en] .taigi_170605 .footer{height:170px;background:url(../img/event_170605/en/bg_footer.jpg) 50% 0 no-repeat}
+
+
+/* bts_170614 */
+/* kr - 국문 */
+.bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+.bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/kr/bg_spot.jpg) 50% 0 no-repeat}
+.bts_170614 .spot .btn{width:373px;height:86px;position:absolute;top:995px;left:298px}
+.bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/kr/bg_evt.jpg) 50% 0 no-repeat}
+.bts_170614 .evt.off{display:none}
+.bts_170614 .evt .btn{width:373px;height:86px;position:absolute;top:793px;left:298px}
+.bts_170614 .footer{height:199px;background:url(../img/event_170614/kr/bg_footer.jpg) 50% 0 no-repeat}
+
+/* en - 영어 */
+[lang=en] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=en] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/en/bg_spot.jpg) 50% 0 no-repeat}
+[lang=en] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/en/bg_evt.jpg) 50% 0 no-repeat}
+[lang=en] .bts_170614 .footer{height:212px;background:url(../img/event_170614/en/bg_footer.jpg) 50% 0 no-repeat}
+
+/* vi - 베트남어 */
+[lang=vi] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=vi] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/vi/bg_spot.jpg) 50% 0 no-repeat}
+[lang=vi] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/vi/bg_evt.jpg) 50% 0 no-repeat}
+[lang=vi] .bts_170614 .footer{height:199px;background:url(../img/event_170614/vi/bg_footer.jpg) 50% 0 no-repeat}
+
+/* es - 스페인어 */
+[lang=es] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=es] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/es/bg_spot.jpg) 50% 0 no-repeat}
+[lang=es] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/es/bg_evt.jpg) 50% 0 no-repeat}
+[lang=es] .bts_170614 .footer{height:199px;background:url(../img/event_170614/es/bg_footer.jpg) 50% 0 no-repeat}
+
+/* ja - 일어 */
+[lang=ja] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=ja] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/ja/bg_spot.jpg) 50% 0 no-repeat}
+[lang=ja] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/ja/bg_evt.jpg) 50% 0 no-repeat}
+[lang=ja] .bts_170614 .footer{height:199px;background:url(../img/event_170614/ja/bg_footer.jpg) 50% 0 no-repeat}
+
+/* th - 태국어 */
+[lang=th] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=th] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/th/bg_spot.jpg) 50% 0 no-repeat}
+[lang=th] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/th/bg_evt.jpg) 50% 0 no-repeat}
+[lang=th] .bts_170614 .footer{height:199px;background:url(../img/event_170614/th/bg_footer.jpg) 50% 0 no-repeat}
+
+/* zh_hans - 중국어 간체 */
+[lang=zh-Hans] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=zh-Hans] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/zh_hans/bg_spot.jpg) 50% 0 no-repeat}
+[lang=zh-Hans] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/zh_hans/bg_evt.jpg) 50% 0 no-repeat}
+[lang=zh-Hans] .bts_170614 .footer{height:199px;background:url(../img/event_170614/zh_hans/bg_footer.jpg) 50% 0 no-repeat}
+
+/* zh_hant - 중국어 번체 */
+[lang=zh-Hant] .bts_170614 #content{position:relative;padding-top:122px;z-index:10}
+[lang=zh-Hant] .bts_170614 .spot{height:1196px;background:#d2f6f2 url(../img/event_170614/zh_hant/bg_spot.jpg) 50% 0 no-repeat}
+[lang=zh-Hant] .bts_170614 .evt{height:1015px;background:#d2f6f2 url(../img/event_170614/zh_hant/bg_evt.jpg) 50% 0 no-repeat}
+[lang=zh-Hant] .bts_170614 .footer{height:199px;background:url(../img/event_170614/zh_hant/bg_footer.jpg) 50% 0 no-repeat}
+
+/* taigi_170707 */
+/* kr - 국문 */
+.taigi_170707 #content{position:relative;padding-top:122px;z-index:10}
+.taigi_170707 .spot{height:1695px;background:#22201f url(../img/event_170707/kr/bg_spot.jpg) 50% 0 no-repeat}
+.taigi_170707 .spot .tab_area .btn_box{position:absolute;top:14px;width:100%;height:120px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170707 .spot .tab_area .btn_box ol{overflow:hidden}
+.taigi_170707 .spot .tab_area .btn_box li{width:293px;height:120px;display:block;float:left;box-sizing:border-box}
+.taigi_170707 .spot .tab_area .btn_box li a{display:block;width:100%;height:100%}
+.taigi_170707 .spot .tab_area{position:absolute;top:550px;left:40px}
+.taigi_170707 .spot .tab_area li{display:none}
+.taigi_170707 .spot .tab_area .on{display:block}
+.taigi_170707 .spot .tab_area .tab1 .btn{width:340px;height:90px;position:absolute;top:802px;left:269px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170707 .spot .tab_area .tab2 .btn{width:340px;height:90px;position:absolute;top:772px;left:269px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170707 .evt{height:1034px;background:#22201f url(../img/event_170707/kr/bg_evt.jpg) 50% 0 no-repeat}
+.taigi_170707 .evt .btn{width:340px;height:90px;position:absolute;top:804px;left:50%;margin-left:-170px;background:url(../img/event_170707/kr/img_evt_btn.png) no-repeat;display:none}
+.taigi_170707 .evt .btn.v2{background:url(../img/event_170707/kr/img_evt_btn2.png) no-repeat;cursor:default}
+.taigi_170707 .evt .btn.on{display:block}
+.taigi_170707 .footer{height:170px;background:url(../img/event_170707/kr/bg_footer.jpg) 50% 0 no-repeat}
+
+/* en - 영어 */
+[lang=en] .taigi_170707 .spot{height:1715px;background:#22201f url(../img/event_170707/en/bg_spot.jpg) 50% 0 no-repeat}
+[lang=en] .taigi_170707 .spot .tab_area .tab1 .btn{width:340px;height:91px;position:absolute;top:770px;left:269px}
+[lang=en] .taigi_170707 .footer{height:140px;background:url(../img/event_170707/en/bg_footer.jpg) 50% 0 no-repeat}
+
+/* taigi_170803 */
+/* kr - 국문 */
+.taigi_170803 #content{position:relative;padding-top:122px;z-index:10}
+.taigi_170803 .spot{height:1656px;background:#22201f url(../img/event_170803/kr/bg_spot.jpg) 50% 0 no-repeat}
+.taigi_170803 .spot .tab_area .btn_box{position:absolute;top:14px;width:100%;height:120px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170803 .spot .tab_area .btn_box ol{overflow:hidden}
+.taigi_170803 .spot .tab_area .btn_box li{width:293px;height:120px;display:block;float:left;box-sizing:border-box}
+.taigi_170803 .spot .tab_area .btn_box li a{display:block;width:100%;height:100%}
+.taigi_170803 .spot .tab_area{position:absolute;top:550px;left:40px}
+.taigi_170803 .spot .tab_area li{display:none}
+.taigi_170803 .spot .tab_area .on{display:block}
+.taigi_170803 .spot .tab_area .tab1 .btn{width:340px;height:90px;position:absolute;top:802px;left:269px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170803 .spot .tab_area .tab2 .btn{width:340px;height:90px;position:absolute;top:772px;left:269px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170803 .spot .tab_area .tab3 .btn{width:340px;height:90px;position:absolute;top:772px;left:269px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.taigi_170803 .evt{height:1034px;background:#22201f url(../img/event_170803/kr/bg_evt.jpg) 50% 0 no-repeat}
+.taigi_170803 .evt .btn{width:340px;height:90px;position:absolute;top:804px;left:50%;margin-left:-170px;background:url(../img/event_170803/kr/img_evt_btn.png) no-repeat;display:none}
+.taigi_170803 .evt .btn.v2{background:url(../img/event_170803/kr/img_evt_btn2.png) no-repeat;cursor:default}
+.taigi_170803 .evt .btn.on{display:block}
+.taigi_170803 .evt .btn_view{width:420px;height:68px;position:absolute;top:463px;left:50%;margin-left:-159px}
+.taigi_170803 .footer{height:170px;background:url(../img/event_170803/kr/bg_footer.jpg) 50% 0 no-repeat}
+
+/* en - 영어 */
+[lang=en] .taigi_170803 .spot{height:1715px;background:#22201f url(../img/event_170707/en/bg_spot.jpg) 50% 0 no-repeat}
+[lang=en] .taigi_170803 .spot .tab_area .tab1 .btn{width:340px;height:91px;position:absolute;top:770px;left:269px}
+[lang=en] .taigi_170803 .footer{height:140px;background:url(../img/event_170707/en/bg_footer.jpg) 50% 0 no-repeat}
+[lang=en] .taigi_170803 .btn_details{width:102px;height:24px;position:absolute;bottom:156px;right:155px;opacity:0;filter:alpha(opacity:'0')}
+
+/* exo_170808 */
+#content{padding-top:122px;z-index:10}
+.exo_170808 .section .btn_package{position:absolute;top:364px;left:35px;width:236px;height:86px;}
+.exo_170808 .section2 .btn_event{position:absolute;top:163px;left:35px;width:236px;height:86px;}
+/* kr-국문 */
+.exo_170808 .spot{height:690px;background:#7ecdf4 url(../img/event_170808/kr/bg_spot.jpg) 50% 0 no-repeat;}
+.exo_170808 .section{height:1271px;background:#7ecdf4 url(../img/event_170808/kr/img_section.jpg) 50% 0 no-repeat;}
+.exo_170808 .section2{height:492px;background:#7ecdf4 url(../img/event_170808/kr/img_section2.jpg) 50% 0 no-repeat;}
+.exo_170808 .footer{height:334px;background:#fff url(../img/event_170808/kr/bg_footer_v2.jpg) 50% 0 no-repeat;}
+/* en-영문 */
+[lang=en] .exo_170808 .spot{background-image:url(../img/event_170808/en/bg_spot.jpg)}
+[lang=en] .exo_170808 .section{background-image:url(../img/event_170808/en/img_section.jpg)}
+[lang=en] .exo_170808 .section2{background-image:url(../img/event_170808/en/img_section2.jpg)}
+[lang=en] .exo_170808 .footer{background-image:url(../img/event_170808/en/bg_footer_v2.jpg)}
+/* ja-일어 */
+[lang=ja] .exo_170808 .spot{background-image:url(../img/event_170808/ja/bg_spot.jpg)}
+[lang=ja] .exo_170808 .section{background-image:url(../img/event_170808/ja/img_section.jpg)}
+[lang=ja] .exo_170808 .section2{background-image:url(../img/event_170808/ja/img_section2.jpg)}
+[lang=ja] .exo_170808 .footer{background-image:url(../img/event_170808/ja/bg_footer_v2.jpg)}
+/* vi-베트남어 */
+[lang=vi] .exo_170808 .spot{background-image:url(../img/event_170808/vi/bg_spot.jpg)}
+[lang=vi] .exo_170808 .section{background-image:url(../img/event_170808/vi/img_section.jpg)}
+[lang=vi] .exo_170808 .section2{background-image:url(../img/event_170808/vi/img_section2.jpg)}
+[lang=vi] .exo_170808 .footer{background-image:url(../img/event_170808/vi/bg_footer_v2.jpg)}
+/* zh-Hans 중문(간체) */
+[lang=zh-Hans] .exo_170808 .spot{background-image:url(../img/event_170808/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .exo_170808 .section{background-image:url(../img/event_170808/zh_hans/img_section.jpg)}
+[lang=zh-Hans] .exo_170808 .section2{background-image:url(../img/event_170808/zh_hans/img_section2.jpg)}
+[lang=zh-Hans] .exo_170808 .footer{background-image:url(../img/event_170808/zh_hans/bg_footer_v2.jpg)}
+/* zh-Hant 중문(번체) */
+[lang=zh-hant] .exo_170808 .spot{background-image:url(../img/event_170808/zh_hant/bg_spot.jpg)}
+[lang=zh-hant] .exo_170808 .section{background-image:url(../img/event_170808/zh_hant/img_section.jpg)}
+[lang=zh-hant] .exo_170808 .section2{background-image:url(../img/event_170808/zh_hant/img_section2.jpg)}
+[lang=zh-hant] .exo_170808 .footer{background-image:url(../img/event_170808/zh_hant/bg_footer_v2.jpg)}
+
+/* taemin_170824 */
+.taemin_170824 #content{padding-top:122px;z-index:10}
+.taemin_170824 .section .btn_package{position:absolute;top:377px;left:35px;width:236px;height:82px;}
+.taemin_170824 .section2 .btn_event{position:absolute;top:295px;left:35px;width:236px;height:82px;}
+/* kr-국문 */
+.taemin_170824 .spot{height:540px;background:#171523 url(../img/event_170824/kr/bg_spot.jpg) 50% 0 no-repeat;}
+.taemin_170824 .section{height:792px;background:#171523 url(../img/event_170824/kr/img_section_v2.jpg) 50% 0 no-repeat;}
+.taemin_170824 .section2{height:529px;background:#171523 url(../img/event_170824/kr/img_section2.jpg) 50% 0 no-repeat;}
+.taemin_170824 .footer{height:303px;background:#fff url(../img/event_170824/kr/bg_footer.jpg) 50% 0 no-repeat;}
+/* en-영문 */
+[lang=en] .taemin_170824 .spot{background-image:url(../img/event_170824/en/bg_spot.jpg)}
+[lang=en] .taemin_170824 .section{background-image:url(../img/event_170824/en/img_section_v2.jpg)}
+[lang=en] .taemin_170824 .section2{background-image:url(../img/event_170824/en/img_section2.jpg)}
+[lang=en] .taemin_170824 .footer{background-image:url(../img/event_170824/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .taemin_170824 .spot{background-image:url(../img/event_170824/ja/bg_spot.jpg)}
+[lang=ja] .taemin_170824 .section{background-image:url(../img/event_170824/ja/img_section_v2.jpg)}
+[lang=ja] .taemin_170824 .section2{background-image:url(../img/event_170824/ja/img_section2.jpg)}
+[lang=ja] .taemin_170824 .footer{background-image:url(../img/event_170824/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .taemin_170824 .spot{background-image:url(../img/event_170824/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .taemin_170824 .section{background-image:url(../img/event_170824/zh_hans/img_section_v2.jpg)}
+[lang=zh-Hans] .taemin_170824 .section2{background-image:url(../img/event_170824/zh_hans/img_section2.jpg)}
+[lang=zh-Hans] .taemin_170824 .footer{background-image:url(../img/event_170824/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .taemin_170824 .spot{background-image:url(../img/event_170824/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .taemin_170824 .section{background-image:url(../img/event_170824/zh_hant/img_section_v2.jpg)}
+[lang=zh-Hant] .taemin_170824 .section2{background-image:url(../img/event_170824/zh_hant/img_section2.jpg)}
+[lang=zh-Hant] .taemin_170824 .footer{background-image:url(../img/event_170824/zh_hant/bg_footer.jpg)}
+
+/* B1A4_170915 */
+.b1a4_170915 .spot{height:504px;background:#00fee9 url(../img/event_170915/kr/bg_spot.jpg) 50% 0 no-repeat}
+.b1a4_170915 .section{position:relative;height:1514px;background:#00fee9 url(../img/event_170915/kr/bg_section.jpg) 50% 0 no-repeat}
+.b1a4_170915 .section .btn_package{position:absolute;top:660px;left:50%;width:376px;height:86px;margin-left:-188px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+.b1a4_170915 .footer{height:325px;background:#fff url(../img/event_170915/kr/bg_footer_v2.jpg) 50% 0 no-repeat}
+.b1a4_170915 .package_lst{overflow:hidden;position:absolute;top:863px;left:50%;width:778px;margin-left:-390px}
+.b1a4_170915 .package_lst li{float:left;position:relative;width:235px;height:258px;margin: 0 12px}
+.b1a4_170915 .package_lst .btn_buy{display:block;position:absolute;right:0;bottom:0;width:139px;height:48px;background-color:#fff;opacity:0;filter:alpha(opacity:'0')}
+/* en-영문 */
+[lang=en] .b1a4_170915 .spot{background-image:url(../img/event_170915/en/bg_spot.jpg)}
+[lang=en] .b1a4_170915 .section{background-image:url(../img/event_170915/en/bg_section.jpg)}
+[lang=en] .b1a4_170915 .footer{height:347px;background-image:url(../img/event_170915/en/bg_footer_v2.jpg)}
+[lang=en] .b1a4_170915 .section .btn_package{top:657px}
+/* ja-일어 */
+[lang=ja] .b1a4_170915 .spot{background-image:url(../img/event_170915/ja/bg_spot.jpg)}
+[lang=ja] .b1a4_170915 .section{height:856px;background-image:url(../img/event_170915/ja/bg_section.jpg)}
+[lang=ja] .b1a4_170915 .footer{height:303px;background-image:url(../img/event_170915/ja/bg_footer_v2.jpg)}
+[lang=ja] .b1a4_170915 .package_lst{top:463px}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .b1a4_170915 .spot{background-image:url(../img/event_170915/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .b1a4_170915 .section{background-image:url(../img/event_170915/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .b1a4_170915 .footer{height:325px;background-image:url(../img/event_170915/zh_hans/bg_footer_v2.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .b1a4_170915 .spot{background-image:url(../img/event_170915/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .b1a4_170915 .section{background-image:url(../img/event_170915/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .b1a4_170915 .footer{height:325px;background-image:url(../img/event_170915/zh_hant/bg_footer_v2.jpg)}
+/* vi-베트남어 */
+[lang=vi] .b1a4_170915 .spot{background-image:url(../img/event_170915/vi/bg_spot.jpg)}
+[lang=vi] .b1a4_170915 .section{background-image:url(../img/event_170915/vi/bg_section.jpg)}
+[lang=vi] .b1a4_170915 .footer{height:326px;background-image:url(../img/event_170915/vi/bg_footer_v2.jpg)}
+
+/* bts_171121 */
+.bts_171121 .spot{height:540px;background:#1a1a1a url(../img/event_171121/kr/bg_spot.jpg) 50% 0 no-repeat}
+.bts_171121 .section{position:relative;height:1215px;background:#1a1a1a url(../img/event_171121/kr/bg_section.jpg) 50% 0 no-repeat}
+.bts_171121 .section .btn_package{position:absolute;top:157px;left:41%;width:327px;height:86px;margin-left:-12px;background-color:#6c24b4;opacity:0;filter:alpha(opacity:'0')}
+.bts_171121 .footer{height:295px;background:#fff url(../img/event_171121/kr/bg_footer.jpg) 50% 0 no-repeat}
+.bts_171121 .package_lst{overflow:hidden;position:absolute;top:863px;left:50%;width:778px;margin-left:-390px}
+/* en-영문 */
+[lang=en] .bts_171121 .spot{background-image:url(../img/event_171121/en/bg_spot.jpg)}
+[lang=en] .bts_171121 .section{background-image:url(../img/event_171121/en/bg_section.jpg)}
+[lang=en] .bts_171121 .footer{background-image:url(../img/event_171121/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .bts_171121 .spot{background-image:url(../img/event_171121/ja/bg_spot.jpg)}
+[lang=ja] .bts_171121 .section{background-image:url(../img/event_171121/ja/bg_section.jpg)}
+[lang=ja] .bts_171121 .footer{background-image:url(../img/event_171121/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .bts_171121 .spot{background-image:url(../img/event_171121/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .bts_171121 .section{background-image:url(../img/event_171121/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .bts_171121 .footer{background-image:url(../img/event_171121/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .bts_171121 .spot{background-image:url(../img/event_171121/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .bts_171121 .section{background-image:url(../img/event_171121/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .bts_171121 .footer{background-image:url(../img/event_171121/zh_hant/bg_footer.jpg)}
+/* th 태국어 */
+[lang=th] .bts_171121 .spot{background-image:url(../img/event_171121/th/bg_spot.jpg)}
+[lang=th] .bts_171121 .section{background-image:url(../img/event_171121/th/bg_section.jpg)}
+[lang=th] .bts_171121 .footer{background-image:url(../img/event_171121/th/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .bts_171121 .spot{background-image:url(../img/event_171121/vi/bg_spot.jpg)}
+[lang=vi] .bts_171121 .section{background-image:url(../img/event_171121/vi/bg_section.jpg)}
+[lang=vi] .bts_171121 .footer{background-image:url(../img/event_171121/vi/bg_footer.jpg)}
+/* es 스페인어 */
+[lang=es] .bts_171121 .spot{background-image:url(../img/event_171121/es/bg_spot.jpg)}
+[lang=es] .bts_171121 .section{background-image:url(../img/event_171121/es/bg_section.jpg)}
+[lang=es] .bts_171121 .footer{background-image:url(../img/event_171121/es/bg_footer.jpg)}
+
+/* SJ_180102 */
+.sj_180102 .spot{height:504px;background:#000002 url(../img/event_180102/kr/bg_spot_v2.jpg) 50% 0 no-repeat}
+.sj_180102 .section{position:relative;height:571px;background:#000002 url(../img/event_180102/kr/bg_section.jpg) 50% 0 no-repeat}
+.sj_180102 .section .btn_buy{position:absolute;top:350px;left:34px;width:236px;height:86px;background-color:#007efe;opacity:0;filter:alpha(opacity:'0')}
+.sj_180102 .footer{height:310px;background:#fff url(../img/event_180102/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .sj_180102 .spot{background-image:url(../img/event_180102/en/bg_spot_v2.jpg)}
+[lang=en] .sj_180102 .section{background-image:url(../img/event_180102/en/bg_section.jpg)}
+[lang=en] .sj_180102 .footer{background-image:url(../img/event_180102/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .sj_180102 .spot{background-image:url(../img/event_180102/ja/bg_spot_v2.jpg)}
+[lang=ja] .sj_180102 .section{background-image:url(../img/event_180102/ja/bg_section.jpg)}
+[lang=ja] .sj_180102 .footer{height:303px;background-image:url(../img/event_180102/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .sj_180102 .spot{background-image:url(../img/event_180102/zh_hans/bg_spot_v2.jpg)}
+[lang=zh-Hans] .sj_180102 .section{background-image:url(../img/event_180102/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .sj_180102 .footer{height:296px;background-image:url(../img/event_180102/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .sj_180102 .spot{background-image:url(../img/event_180102/zh_hant/bg_spot_v2.jpg)}
+[lang=zh-Hant] .sj_180102 .section{background-image:url(../img/event_180102/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .sj_180102 .footer{height:296px;background-image:url(../img/event_180102/zh_hant/bg_footer.jpg)}
+
+/* HIGHLIGHT_180129 */
+.highlight_180129 .spot{height:504px;background:#112411 url(../img/event_180129/kr/bg_spot.jpg) 50% 0 no-repeat}
+.highlight_180129 .section{position:relative;height:846px;background:#112411 url(../img/event_180129/kr/bg_section.jpg) 50% 0 no-repeat}
+.highlight_180129 .section .btn_buy{position:absolute;top:116px;left:50%;width:236px;height:86px;margin-left:-54px;background-color:#6c24b4;opacity:0;filter:alpha(opacity:'0')}
+.highlight_180129 .footer{height:335px;background:#fff url(../img/event_180129/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .highlight_180129 .spot{background-image:url(../img/event_180129/en/bg_spot.jpg)}
+[lang=en] .highlight_180129 .section{background-image:url(../img/event_180129/en/bg_section.jpg)}
+[lang=en] .highlight_180129 .footer{background-image:url(../img/event_180129/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .highlight_180129 .spot{background-image:url(../img/event_180129/ja/bg_spot.jpg)}
+[lang=ja] .highlight_180129 .section{background-image:url(../img/event_180129/ja/bg_section.jpg)}
+[lang=ja] .highlight_180129 .footer{background-image:url(../img/event_180129/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .highlight_180129 .spot{background-image:url(../img/event_180129/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .highlight_180129 .section{background-image:url(../img/event_180129/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .highlight_180129 .footer{background-image:url(../img/event_180129/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .highlight_180129 .spot{background-image:url(../img/event_180129/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .highlight_180129 .section{background-image:url(../img/event_180129/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .highlight_180129 .footer{background-image:url(../img/event_180129/zh_hant/bg_footer.jpg)}
+/* th 태국어 */
+[lang=th] .highlight_180129 .spot{background-image:url(../img/event_180129/th/bg_spot.jpg)}
+[lang=th] .highlight_180129 .section{background-image:url(../img/event_180129/th/bg_section.jpg)}
+[lang=th] .highlight_180129 .footer{background-image:url(../img/event_180129/th/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .highlight_180129 .spot{background-image:url(../img/event_180129/vi/bg_spot.jpg)}
+[lang=vi] .highlight_180129 .section{background-image:url(../img/event_180129/vi/bg_section.jpg)}
+[lang=vi] .highlight_180129 .footer{background-image:url(../img/event_180129/vi/bg_footer.jpg)}
+
+/* monsta x 180209 */
+.monsta_x_180209 .spot{height:510px;background:#c4d8c4  url(../img/event_180209/kr/bg_spot.jpg) 50% 0 no-repeat}
+.monsta_x_180209 .section{position:relative;height:692px;background:#c4d8c4  url(../img/event_180209/kr/bg_section.jpg) 50% 0 no-repeat}
+.monsta_x_180209 .section .btn_buy{position:absolute;top:514px;left:50%;width:236px;height:86px;margin-left:-446px;background-color:#6c24b4;opacity:0;filter:alpha(opacity:'0')}
+.monsta_x_180209 .footer{height:334px;background:#fff url(../img/event_180209/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .monsta_x_180209 .spot{background-image:url(../img/event_180209/en/bg_spot.jpg)}
+[lang=en] .monsta_x_180209 .section{background-image:url(../img/event_180209/en/bg_section.jpg)}
+[lang=en] .monsta_x_180209 .footer{background-image:url(../img/event_180209/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .monsta_x_180209 .spot{background-image:url(../img/event_180209/ja/bg_spot.jpg)}
+[lang=ja] .monsta_x_180209 .section{background-image:url(../img/event_180209/ja/bg_section.jpg)}
+[lang=ja] .monsta_x_180209 .footer{background-image:url(../img/event_180209/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .monsta_x_180209 .spot{background-image:url(../img/event_180209/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .monsta_x_180209 .section{background-image:url(../img/event_180209/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .monsta_x_180209 .footer{background-image:url(../img/event_180209/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .monsta_x_180209 .spot{background-image:url(../img/event_180209/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .monsta_x_180209 .section{background-image:url(../img/event_180209/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .monsta_x_180209 .footer{background-image:url(../img/event_180209/zh_hant/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .monsta_x_180209 .spot{background-image:url(../img/event_180209/vi/bg_spot.jpg)}
+[lang=vi] .monsta_x_180209 .section{background-image:url(../img/event_180209/vi/bg_section.jpg)}
+[lang=vi] .monsta_x_180209 .footer{background-image:url(../img/event_180209/vi/bg_footer.jpg)}
+
+/* boa_180329 */
+.boa_180329 .spot{height:504px;background:#ffc1c9  url(../img/event_180329/kr/bg_spot.jpg) 50% 0 no-repeat}
+.boa_180329 .section{position:relative;height:571px;background:#ffc1c9  url(../img/event_180329/kr/bg_section.jpg) 50% 0 no-repeat}
+.boa_180329 .section .btn_buy{position:absolute;top:350px;left:50%;width:236px;height:86px;margin-left:-446px;background-color:#6c24b4;opacity:0;filter:alpha(opacity:'0')}
+.boa_180329 .footer{height:310px;background:#fff url(../img/event_180329/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .boa_180329 .spot{background-image:url(../img/event_180329/en/bg_spot.jpg)}
+[lang=en] .boa_180329 .section{background-image:url(../img/event_180329/en/bg_section.jpg)}
+[lang=en] .boa_180329 .footer{background-image:url(../img/event_180329/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .boa_180329 .spot{background-image:url(../img/event_180329/ja/bg_spot.jpg)}
+[lang=ja] .boa_180329 .section{background-image:url(../img/event_180329/ja/bg_section.jpg)}
+[lang=ja] .boa_180329 .footer{height:305px;background-image:url(../img/event_180329/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .boa_180329 .spot{background-image:url(../img/event_180329/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .boa_180329 .section{background-image:url(../img/event_180329/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .boa_180329 .footer{background-image:url(../img/event_180329/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .boa_180329 .spot{background-image:url(../img/event_180329/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .boa_180329 .section{background-image:url(../img/event_180329/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .boa_180329 .footer{background-image:url(../img/event_180329/zh_hant/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .boa_180329 .spot{background-image:url(../img/event_180329/vi/bg_spot.jpg)}
+[lang=vi] .boa_180329 .section{background-image:url(../img/event_180329/vi/bg_section.jpg)}
+[lang=vi] .boa_180329 .footer{background-image:url(../img/event_180329/vi/bg_footer.jpg)}
+
+/* seventeen 180402 */
+.seventeen_180402 .spot{height:504px;background:#fff  url(../img/event_180402/kr/bg_spot.jpg) 50% 0 no-repeat}
+.seventeen_180402 .section{position:relative;height:806px;background:#fff url(../img/event_180402/kr/bg_section.jpg) 50% 0 no-repeat}
+.seventeen_180402 .section .btn_buy{position:absolute;top:200px;left:50%;width:323px;height:86px;margin-left:-97px;background-color:#694851;opacity:0;filter:alpha(opacity:'0')}
+.seventeen_180402 .footer{height:318px;border-top:1px solid #67464f;background:#fff url(../img/event_180402/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .seventeen_180402 .spot{background-image:url(../img/event_180402/en/bg_spot.jpg)}
+[lang=en] .seventeen_180402 .section{height:879px;background-image:url(../img/event_180402/en/bg_section.jpg)}
+[lang=en] .seventeen_180402 .section .btn_buy{width:343px;top:272px;margin-left:-107px}
+[lang=en] .seventeen_180402 .footer{border-top:1px solid #67464f;background-image:url(../img/event_180402/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .seventeen_180402 .spot{background-image:url(../img/event_180402/ja/bg_spot.jpg)}
+[lang=ja] .seventeen_180402 .section{background-image:url(../img/event_180402/ja/bg_section.jpg)}
+[lang=ja] .seventeen_180402 .section .btn_buy{width:343px;top:195px;margin-left:-107px}
+[lang=ja] .seventeen_180402 .footer{border-top:1px solid #67464f;background-image:url(../img/event_180402/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .seventeen_180402 .spot{background-image:url(../img/event_180402/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .seventeen_180402 .section{background-image:url(../img/event_180402/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .seventeen_180402 .section .btn_buy{top:195px;margin-left:-96px}
+[lang=zh-Hans] .seventeen_180402 .footer{border-top:1px solid #67464f;background-image:url(../img/event_180402/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .seventeen_180402 .spot{background-image:url(../img/event_180402/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .seventeen_180402 .section{background-image:url(../img/event_180402/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .seventeen_180402 .section .btn_buy{top:195px;margin-left:-96px}
+[lang=zh-Hant] .seventeen_180402 .footer{border-top:1px solid #67464f;background-image:url(../img/event_180402/zh_hant/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .seventeen_180402 .spot{background-image:url(../img/event_180402/vi/bg_spot.jpg)}
+[lang=vi] .seventeen_180402 .section{background-image:url(../img/event_180402/vi/bg_section.jpg)}
+[lang=vi] .seventeen_180402 .section .btn_buy{top:195px;margin-left:-96px}
+[lang=vi] .seventeen_180402 .footer{border-top:1px solid #67464f;background-image:url(../img/event_180402/vi/bg_footer.jpg)}
+
+/* got7 180430 */
+.got7_180430 .spot{
+    height:503px;
+    background:#f6f6f6 url('../img/event_180430/kr/bg_spot_con.jpg') 50% 0 no-repeat;
+}
+.got7_180430 .section{
+    height: 1410px;
+    background:#f6f6f6 url('../img/event_180430/kr/bg_section_con.jpg') 50% 0 no-repeat;
+}
+.got7_180430 .section .btn_buy{
+    position: absolute;
+    top: 1195px;
+    left: 50%;
+    width: 325px;
+    height: 87px;
+    margin-left: -162px;
+    background-color: #253a42;
+    opacity:0;
+    filter:alpha(opacity:'0');
+}
+.got7_180430 .footer{
+    border-top:1px solid #deddeb;
+    height: 318px;
+    background:#fff url('../img/event_180430/kr/bg_foot_con.jpg') 50% 0 no-repeat;
+}
+/* en-영문 */
+[lang=en] .got7_180430 .spot{background-image:url(../img/event_180430/en/bg_spot.jpg)}
+[lang=en] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/en/bg_section.jpg)}
+[lang=en] .got7_180430 .section .btn_buy{width:325px;top:1195px;margin-left:-162px;}
+[lang=en] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/en/bg_foot.jpg)}
+/* ja-일어 */
+[lang=ja] .got7_180430 .spot{background-image:url(../img/event_180430/ja/bg_spot.jpg)}
+[lang=ja] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/ja/bg_section.jpg)}
+[lang=ja] .got7_180430 .section .btn_buy{width:364px;margin-left:-182px;}
+[lang=ja] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/ja/bg_foot.jpg)}
+/* th-태국 */
+[lang=th] .got7_180430 .spot{background-image:url(../img/event_180430/th/bg_spot.jpg)}
+[lang=th] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/th/bg_section.jpg)}
+[lang=th] .got7_180430 .section .btn_buy{width:364px;margin-left:-182px;}
+[lang=th] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/th/bg_foot.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-Hans] .got7_180430 .spot{background-image:url(../img/event_180430/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .got7_180430 .section .btn_buy{margin-left: -182px;width: 364px;}
+[lang=zh-Hans] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/zh_hans/bg_foot.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-Hant] .got7_180430 .spot{background-image:url(../img/event_180430/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .got7_180430 .section .btn_buy{margin-left: -182px;width: 364px;}
+[lang=zh-Hant] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/zh_hant/bg_foot.jpg)}
+/* vi 베트남어 */
+[lang=vi] .got7_180430 .spot{background-image:url(../img/event_180430/vi/bg_spot.jpg)}
+[lang=vi] .got7_180430 .section{height:1410px;background-image:url(../img/event_180430/vi/bg_section.jpg)}
+[lang=vi] .got7_180430 .section .btn_buy{margin-left: -181px;width: 364px;}
+[lang=vi] .got7_180430 .footer{border-top:1px solid #deddeb;background-image:url(../img/event_180430/vi/bg_foot.jpg)}
+
+/* straykids_180503 */
+.straykids_180503 .spot{height:503px;background:#fff  url(../img/event_180503/kr/bg_spot.jpg) 50% 0 no-repeat}
+.straykids_180503 .section{position:relative;height:877px;background:#fff url(../img/event_180503/kr/bg_section.jpg) 50% 0 no-repeat}
+.straykids_180503 .section .btn_buy{position:absolute;top:117px;left:50%;width:323px;height:86px;margin-left:-97px;background-color:#4859b3;opacity:0;filter:alpha(opacity:'0')}
+.straykids_180503 .footer{height:320px; background:#fff url(../img/event_180503/kr/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .straykids_180503 .spot{background-image:url(../img/event_180503/en/bg_spot.jpg)}
+[lang=en] .straykids_180503 .section{background-image:url(../img/event_180503/en/bg_section.jpg)}
+[lang=en] .straykids_180503 .footer{background-image:url(../img/event_180503/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .straykids_180503 .spot{background-image:url(../img/event_180503/ja/bg_spot.jpg)}
+[lang=ja] .straykids_180503 .section{background-image:url(../img/event_180503/ja/bg_section.jpg)}
+[lang=ja] .straykids_180503 .footer{background-image:url(../img/event_180503/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-hans] .straykids_180503 .spot{background-image:url(../img/event_180503/zh_hans/bg_spot.jpg)}
+[lang=zh-hans] .straykids_180503 .section{background-image:url(../img/event_180503/zh_hans/bg_section.jpg)}
+[lang=zh-hans] .straykids_180503 .footer{background-image:url(../img/event_180503/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-hant] .straykids_180503 .spot{background-image:url(../img/event_180503/zh_hant/bg_spot.jpg)}
+[lang=zh-hant] .straykids_180503 .section{background-image:url(../img/event_180503/zh_hant/bg_section.jpg)}
+[lang=zh-hant] .straykids_180503 .footer{background-image:url(../img/event_180503/zh_hant/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .straykids_180503 .spot{background-image:url(../img/event_180503/vi/bg_spot.jpg)}
+[lang=vi] .straykids_180503 .section{background-image:url(../img/event_180503/vi/bg_section.jpg)}
+[lang=vi] .straykids_180503 .footer{background-image:url(../img/event_180503/vi/bg_footer.jpg)}
+/* th 태국어 */
+[lang=th] .straykids_180503 .spot{background-image:url(../img/event_180503/th/bg_spot.jpg)}
+[lang=th] .straykids_180503 .section{background-image:url(../img/event_180503/th/bg_section.jpg)}
+[lang=th] .straykids_180503 .footer{background-image:url(../img/event_180503/th/bg_footer.jpg)}
+
+/* lovelyz 180504 */
+.lovelyz_180504 .spot{height:540px;background:#ffbbba  url(../img/event_180504/kr/bg_spot.jpg) 50% 0 no-repeat}
+.lovelyz_180504 .section{position:relative;height:943px;background:#ffbbba url(../img/event_180504/kr/bg_section.jpg) 50% 0 no-repeat}
+.lovelyz_180504 .section .btn_buy{position:absolute;top:393px;left:50%;width:239px;height:86px;margin-left:-446px;background-color:#ff4d5b;opacity:0;filter:alpha(opacity:'0')}
+.lovelyz_180504 .footer{height:321px; background:#fff url(../img/event_180504/kr/bg_foot.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang=en] .lovelyz_180504 .spot{background-image:url(../img/event_180504/en/bg_spot.jpg)}
+[lang=en] .lovelyz_180504 .section{background-image:url(../img/event_180504/en/bg_section.jpg)}
+[lang=en] .lovelyz_180504 .footer{background-image:url(../img/event_180504/en/bg_foot.jpg)}
+/* ja-일어 */
+[lang=ja] .lovelyz_180504 .spot{background-image:url(../img/event_180504/ja/bg_spot.jpg)}
+[lang=ja] .lovelyz_180504 .section{background-image:url(../img/event_180504/ja/bg_section.jpg)}
+[lang=ja] .lovelyz_180504 .footer{background-image:url(../img/event_180504/ja/bg_foot.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-hans] .lovelyz_180504 .spot{background-image:url(../img/event_180504/zh_hans/bg_spot.jpg)}
+[lang=zh-hans] .lovelyz_180504 .section{background-image:url(../img/event_180504/zh_hans/bg_section.jpg)}
+[lang=zh-hans] .lovelyz_180504 .footer{background-image:url(../img/event_180504/zh_hans/bg_foot.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-hant] .lovelyz_180504 .spot{background-image:url(../img/event_180504/zh_hant/bg_spot.jpg)}
+[lang=zh-hant] .lovelyz_180504 .section{background-image:url(../img/event_180504/zh_hant/bg_section.jpg)}
+[lang=zh-hant] .lovelyz_180504 .footer{background-image:url(../img/event_180504/zh_hant/bg_foot.jpg)}
+
+/* bts_180531*/
+.bts_180531 .standardbox {height:100%;}
+.bts_180531 .box_bg {position:relative;height:1217px;}
+.bts_180531 .box_bg:before {content:"";position:absolute;left:0;top:0;width:50%;height:100%;background-color:#202020;z-index:1;}
+.bts_180531 .box_bg:after {content:"";position:absolute;right:0;top:0;width:50%;height:100%;background-color:#111110;z-index:1;}
+.bts_180531 .spot {position:relative;height:503px; background: url("../img/event_180531_bts/kr/bg_spot.jpg") 50% 0 no-repeat;z-index:2;}
+.bts_180531 .section1 {position:relative;height:714px; background: url("../img/event_180531_bts/kr/bg_section1.jpg") 50% 0 no-repeat;z-index:2;}
+.bts_180531 .section1 .btn_buy {position: absolute; bottom:173px;left:50%;width:237px;height:84px;margin:0 0 0 -446px;opacity:0;filter:alpha(opacity:'0');}
+.bts_180531 .footer {height:319px; background:#fff url("../img/event_180531_bts/kr/bg_footer.jpg") 50% 0 no-repeat;}
+[lang="en"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/en/bg_spot.jpg");}
+[lang="en"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/en/bg_section1.jpg");}
+[lang="en"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/en/bg_footer.jpg");}
+[lang="jp"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/jp/bg_spot.jpg");}
+[lang="jp"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/jp/bg_section1.jpg");}
+[lang="jp"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/jp/bg_footer.jpg");}
+[lang="zh-Hans"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/zh-Hans/bg_spot.jpg");}
+[lang="zh-Hans"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/zh-Hans/bg_section1.jpg");}
+[lang="zh-Hans"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/zh-Hans/bg_footer.jpg");}
+[lang="zh-Hant"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/zh-Hant/bg_spot.jpg");}
+[lang="zh-Hant"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/zh-Hant/bg_section1.jpg");}
+[lang="zh-Hant"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/zh-Hant/bg_footer.jpg");}
+[lang="th"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/th/bg_spot.jpg");}
+[lang="th"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/th/bg_section1.jpg");}
+[lang="th"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/th/bg_footer.jpg");}
+[lang="vi"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/vi/bg_spot.jpg");}
+[lang="vi"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/vi/bg_section1.jpg");}
+[lang="vi"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/vi/bg_footer.jpg");}
+[lang="es"] .bts_180531 .spot{background-image: url("../img/event_180531_bts/es/bg_spot.jpg");}
+[lang="es"] .bts_180531 .section1 {background-image: url("../img/event_180531_bts/es/bg_section1.jpg");}
+[lang="es"] .bts_180531 .footer{background-image: url("../img/event_180531_bts/es/bg_footer.jpg");}
+
+
+/* seventeen_180531 */
+.seventeen_180531 .spot{height:503px;background:#fff  url(../img/event_180531/kr/bg_spot.jpg) 50% 0 no-repeat}
+.seventeen_180531 .section{position:relative; height:1076px;background:#fff url(../img/event_180531/kr/bg_section.jpg) 50% 0 no-repeat}
+.seventeen_180531 .section .standardbox{height:100%;}
+.seventeen_180531 .section .btn_buy{position:absolute; left:50%; bottom:146px; margin-left:-163px; width:325px; height:90px;}
+.seventeen_180531 .footer{height:321px; background:#fff url(../img/event_180531/kr/bg_footer.jpg) 50% 0 no-repeat;}
+/* en-영문 */
+[lang=en] .seventeen_180531 .spot{background-image:url(../img/event_180531/en/bg_spot.jpg)}
+[lang=en] .seventeen_180531 .section{background-image:url(../img/event_180531/en/bg_section.jpg)}
+[lang=en] .seventeen_180531 .footer{background-image:url(../img/event_180531/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .seventeen_180531 .spot{background-image:url(../img/event_180531/ja/bg_spot.jpg)}
+[lang=ja] .seventeen_180531 .section{background-image:url(../img/event_180531/ja/bg_section.jpg)}
+[lang=ja] .seventeen_180531 .footer{background-image:url(../img/event_180531/ja/bg_footer.jpg)}
+/* zh_hans 중국어 간체 */
+[lang=zh-hans] .seventeen_180531 .spot{background-image:url(../img/event_180531/zh_hans/bg_spot.jpg)}
+[lang=zh-hans] .seventeen_180531 .section{background-image:url(../img/event_180531/zh_hans/bg_section.jpg)}
+[lang=zh-hans] .seventeen_180531 .footer{background-image:url(../img/event_180531/zh_hans/bg_footer.jpg)}
+/* zh_hant 중국어 번체 */
+[lang=zh-hant] .seventeen_180531 .spot{background-image:url(../img/event_180531/zh_hant/bg_spot.jpg)}
+[lang=zh-hant] .seventeen_180531 .section{background-image:url(../img/event_180531/zh_hant/bg_section.jpg)}
+[lang=zh-hant] .seventeen_180531 .footer{background-image:url(../img/event_180531/zh_hant/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .seventeen_180531 .spot{background-image:url(../img/event_180531/vi/bg_spot.jpg)}
+[lang=vi] .seventeen_180531 .section{background-image:url(../img/event_180531/vi/bg_section.jpg)}
+[lang=vi] .seventeen_180531 .section .btn_buy{width:348px; margin-left:-174px;}
+[lang=vi] .seventeen_180531 .footer{background-image:url(../img/event_180531/vi/bg_footer.jpg)}
+
+/* got7_180619 */
+.got7_180619 .spot{height:503px;background:#222f5b url(../img/event_180619_got7/kr/bg_spot.jpg) 50% 0 no-repeat}
+.got7_180619 .section{position:relative; height:1742px;background:#222f5b url(../img/event_180619_got7/kr/bg_section.jpg) 50% 0 no-repeat}
+.got7_180619 .section .standardbox{height:100%;}
+.got7_180619 .section .btn_buy{position:absolute; left:50%; bottom:165px; margin-left:-163px; width:327px; height:90px;}
+.got7_180619 .footer{height:329px; background:#fff url(../img/event_180619_got7/kr/bg_footer.jpg) 50% 0 no-repeat;}
+/* en-영문 */
+[lang=en] .got7_180619 .spot{background-image:url(../img/event_180619_got7/en/bg_spot.jpg)}
+[lang=en] .got7_180619 .section{background-image:url(../img/event_180619_got7/en/bg_section.jpg)}
+[lang=en] .got7_180619 .footer{height:321px; background-image:url(../img/event_180619_got7/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang=ja] .got7_180619 .spot{background-image:url(../img/event_180619_got7/ja/bg_spot.jpg)}
+[lang=ja] .got7_180619 .section{background-image:url(../img/event_180619_got7/ja/bg_section.jpg)}
+[lang=ja] .got7_180619 .section .btn_buy{width:370px; height:90px; margin-left:-185px;}
+[lang=ja] .got7_180619 .footer{height:319px; background-image:url(../img/event_180619_got7/ja/bg_footer.jpg)}
+/* zh-Hans 중국어 간체 */
+[lang=zh-Hans] .got7_180619 .spot{background-image:url(../img/event_180619_got7/zh_hans/bg_spot.jpg)}
+[lang=zh-Hans] .got7_180619 .section{background-image:url(../img/event_180619_got7/zh_hans/bg_section.jpg)}
+[lang=zh-Hans] .got7_180619 .footer{height:319px; background-image:url(../img/event_180619_got7/zh_hans/bg_footer.jpg)}
+/* zh-Hant 중국어 번체 */
+[lang=zh-Hant] .got7_180619 .spot{background-image:url(../img/event_180619_got7/zh_hant/bg_spot.jpg)}
+[lang=zh-Hant] .got7_180619 .section{background-image:url(../img/event_180619_got7/zh_hant/bg_section.jpg)}
+[lang=zh-Hant] .got7_180619 .footer{height:319px; background-image:url(../img/event_180619_got7/zh_hant/bg_footer.jpg)}
+/* th 태국어 */
+[lang=th] .got7_180619 .spot{background-image:url(../img/event_180619_got7/th/bg_spot.jpg)}
+[lang=th] .got7_180619 .section{background-image:url(../img/event_180619_got7/th/bg_section.jpg)}
+[lang=th] .got7_180619 .footer{height:319px; background-image:url(../img/event_180619_got7/vi/bg_footer.jpg)}
+/* vi 베트남어 */
+[lang=vi] .got7_180619 .spot{background-image:url(../img/event_180619_got7/vi/bg_spot.jpg)}
+[lang=vi] .got7_180619 .section{background-image:url(../img/event_180619_got7/vi/bg_section.jpg)}
+[lang=vi] .got7_180619 .section .btn_buy{width:366px; margin-left:-183px;}
+[lang=vi] .got7_180619 .footer{background-image:url(../img/event_180619_got7/vi/bg_footer.jpg)}
+
+/* kenta 180711 */
+.kenta_180711 .spot {height:500px; background:#e6dacf url("../img/180711_kenta/ko/bg_spot.jpg") 50% 0 no-repeat;}
+.kenta_180711 .section {height:680px; background:#e6dacf url("../img/180711_kenta/ko/bg_section.jpg") 50% 0 no-repeat;}
+.kenta_180711 .section .btn_buy_outer {position: absolute;top:206px;left:50%;margin:0 0 0 -456px;}
+.kenta_180711 .section .btn_buy {overflow:hidden;display:block;width:236px;height:86px;line-height:999px;}
+.kenta_180711 .footer {height:334px; background:#fff url("../img/180711_kenta/ko/bg_footer.jpg") 50% 0 no-repeat;}
+/* en-영문 */
+[lang="en"] .kenta_180711 .spot{background-image:url("../img/180711_kenta/en/bg_spot.jpg");}
+[lang="en"] .kenta_180711 .section{background-image:url("../img/180711_kenta/en/bg_section.jpg");}
+[lang="en"] .kenta_180711 .footer{background-image:url("../img/180711_kenta/en/bg_footer.jpg");}
+/* ja-일어 */
+[lang="ja"] .kenta_180711 .spot{background-image:url("../img/180711_kenta/ja/bg_spot.jpg");}
+[lang="ja"] .kenta_180711 .section{background-image:url("../img/180711_kenta/ja/bg_section.jpg");}
+[lang="ja"] .kenta_180711 .footer{background-image:url("../img/180711_kenta/ja/bg_footer.jpg");}
+/* th-타이(태국) */
+[lang="th"] .kenta_180711 .spot{background-image:url("../img/180711_kenta/th/bg_spot.jpg");}
+[lang="th"] .kenta_180711 .section{background-image:url("../img/180711_kenta/th/bg_section.jpg");}
+[lang="th"] .kenta_180711 .footer{background-image:url("../img/180711_kenta/th/bg_footer.jpg");}
+/* astro_180706 */
+.astro_180706 .spot{height:572px;background:#ffddb0 url(../img/event_180706/kr/bg_spot.png) 50% 0 no-repeat}
+.astro_180706 .section{position:relative; height:786px;background:#ffddb0 url(../img/event_180706/kr/bg_section.png) 50% 0 no-repeat}
+.astro_180706 .section .standardbox{height:100%;}
+.astro_180706 .section .btn_buy{position: absolute;left: 50%;top: 305px;margin-left: -456px;
+    width: 237px;
+    height: 86px;
+}
+.astro_180706 .footer{height:308px; background:#fff url(../img/event_180706/kr/bg_foot.png) 50% 0 no-repeat;}
+/* en-영문 */
+[lang=en] .astro_180706 .spot{background-image:url(../img/event_180706/en/bg_spot.png)}
+[lang=en] .astro_180706 .section{background-image:url(../img/event_180706/en/bg_section.png)}
+[lang=en] .astro_180706 .footer{height:308px; background-image:url(../img/event_180706/en/bg_foot.png)}
+/* ja-일어 */
+[lang=ja] .astro_180706 .spot{background-image:url(../img/event_180706/ja/bg_spot.png)}
+[lang=ja] .astro_180706 .section{background-image:url(../img/event_180706/ja/bg_section.png)}
+[lang=ja] .astro_180706 .footer{height:308px; background-image:url(../img/event_180706/ja/bg_foot.png)}
+/* zh-Hans 중국어 간체 */
+[lang=zh-Hans] .astro_180706 .spot{background-image:url(../img/event_180706/zh_hans/bg_spot.png)}
+[lang=zh-Hans] .astro_180706 .section{background-image:url(../img/event_180706/zh_hans/bg_section.png)}
+[lang=zh-Hans] .astro_180706 .footer{height:308px; background-image:url(../img/event_180706/zh_hans/bg_foot.png)}
+/* zh-Hant 중국어 번체 */
+[lang=zh-Hant] .astro_180706 .spot{background-image:url(../img/event_180706/zh_hant/bg_spot.png)}
+[lang=zh-Hant] .astro_180706 .section{background-image:url(../img/event_180706/zh_hant/bg_section.png)}
+[lang=zh-Hant] .astro_180706 .footer{height:308px; background-image:url(../img/event_180706/zh_hant/bg_foot.png)}
+
+/* reborn_180821 */
+.reborn_180821 .standardbox {height:100%;}
+.reborn_180821 .spot {height:504px; background:#f5f5f3  url("../img/180821_reborn/ko/bg_spot.jpg") 50% 0 no-repeat;}
+.reborn_180821 .section {height:929px; background:#f5f5f3  url("../img/180821_reborn/ko/bg_section_v2.jpg") 50% 0 no-repeat;}
+.reborn_180821 .section .btn_buy {overflow:hidden;position: absolute;bottom:164px;left:50%;margin:0 0 0 -163px;width:322px;height:86px;line-height:999px;}
+.reborn_180821 .footer {height:335px; background:#fff url("../img/180821_reborn/ko/bg_footer.jpg") 50% 0 no-repeat;}
+/* en-영문 */
+[lang="en"] .reborn_180821 .spot{background-image:url("../img/180821_reborn/en/bg_spot.jpg");}
+[lang="en"] .reborn_180821 .section{background-image:url("../img/180821_reborn/en/bg_section_v3.jpg");}
+[lang="en"] .reborn_180821 .footer{background-image:url("../img/180821_reborn/en/bg_footer.jpg");}
+/* ja-일어 */
+[lang="ja"] .reborn_180821 .spot{background-image:url("../img/180821_reborn/ja/bg_spot.jpg");}
+[lang="ja"] .reborn_180821 .section{background-image:url("../img/180821_reborn/ja/bg_section_v2.jpg");}
+[lang="ja"] .reborn_180821 .footer{background-image:url("../img/180821_reborn/ja/bg_footer.jpg");}
+/* th-타이(태국) */
+[lang="th"] .reborn_180821 .spot{background-image:url("../img/180821_reborn/th/bg_spot.jpg");}
+[lang="th"] .reborn_180821 .section{background-image:url("../img/180821_reborn/th/bg_section_v2.jpg");}
+[lang="th"] .reborn_180821 .footer{background-image:url("../img/180821_reborn/th/bg_footer.jpg");}
+
+/* sungkyu 180816 */
+.sungkyu_180816 .spot {height:500px; background:#fafafa url("../img/180816_sungkyu/ko/bg_spot.png") 50% 0 no-repeat;}
+.sungkyu_180816 .section {height:568px; background:#fafafa url("../img/180816_sungkyu/ko/bg_section_v1.png") 50% 0 no-repeat;}
+.sungkyu_180816 .section .btn_buy {position: absolute;top:349px;left:50%;margin:0 0 0 -446px;overflow:hidden;display:block;width:236px;height:86px;line-height:999px;}
+.sungkyu_180816 .footer {height:319px; background:#fff url("../img/180816_sungkyu/ko/bg_footer.png") 50% 0 no-repeat;}
+/* en-영문 */
+[lang="en"] .sungkyu_180816 .spot{height: 473px; background-image:url("../img/180816_sungkyu/en/bg_spot.png");}
+[lang="en"] .sungkyu_180816 .section{ height: 599px; background-image:url("../img/180816_sungkyu/en/bg_section_v1.png");}
+[lang="en"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/en/bg_footer.png");}
+[lang="en"] .sungkyu_180816 .section .btn_buy{top:380px;}
+/* ja-일어 */
+[lang="ja"] .sungkyu_180816 .spot{height: 477px; background-image:url("../img/180816_sungkyu/ja/bg_spot.png");}
+[lang="ja"] .sungkyu_180816 .section{height: 596px; background-image:url("../img/180816_sungkyu/ja/bg_section_v1.png");}
+[lang="ja"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/ja/bg_footer.png");}
+[lang="ja"] .sungkyu_180816 .section .btn_buy{top:375px;}
+/* th-타이(태국) */
+[lang="th"] .sungkyu_180816 .spot{ height: 480px; background-image:url("../img/180816_sungkyu/th/bg_spot.png");}
+[lang="th"] .sungkyu_180816 .section{height: 592px; background-image:url("../img/180816_sungkyu/th/bg_section_v1.png");}
+[lang="th"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/th/bg_footer.png");}
+[lang="th"] .sungkyu_180816 .section .btn_buy{top:372px;}
+/* zh-Hans 중국어 간체 */
+[lang="zh-Hans"] .sungkyu_180816 .spot{ height: 470px; background-image:url("../img/180816_sungkyu/zh_hans/bg_spot.png");}
+[lang="zh-Hans"] .sungkyu_180816 .section{height: 601px; background-image:url("../img/180816_sungkyu/zh_hans/bg_section_v1.png");}
+[lang="zh-Hans"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/zh_hans/bg_footer.png");}
+[lang="zh-Hans"] .sungkyu_180816 .section .btn_buy{top:381px;}
+/* zh-Hant 중국어 번체 */
+[lang="zh-Hant"] .sungkyu_180816 .spot{ height: 470px; background-image:url("../img/180816_sungkyu/zh_hant/bg_spot.png");}
+[lang="zh-Hant"] .sungkyu_180816 .section{height: 601px; background-image:url("../img/180816_sungkyu/zh_hant/bg_section_v1.png");}
+[lang="zh-Hant"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/zh_hant/bg_footer.png");}
+[lang="zh-Hant"] .sungkyu_180816 .section .btn_buy{top:381px;}
+/* vi 베트남 */
+[lang="vi"] .sungkyu_180816 .spot{ height: 474px; background-image:url("../img/180816_sungkyu/vi/bg_spot.png");}
+[lang="vi"] .sungkyu_180816 .section{height: 598px; background-image:url("../img/180816_sungkyu/vi/bg_section_v1.png");}
+[lang="vi"] .sungkyu_180816 .footer{background-image:url("../img/180816_sungkyu/vi/bg_footer.png");}
+[lang="vi"] .sungkyu_180816 .section .btn_buy{top:379px;}
+
+
+/* andy_180828 */
+.andy_180828 .standardbox{height:100%}
+.andy_180828 .spot{height:503px;background:#fbe7ca url(../img/180828_andy/ko/bg_spot.jpg) 50% 0 no-repeat}
+.andy_180828 .section{height:833px;background:#fbe7ca url(../img/180828_andy/ko/bg_section.jpg) 50% 0 no-repeat}
+.andy_180828 .section .btn_buy{position:absolute;bottom:155px;left:50%;margin-left:-105px;width:325px;height:87px}
+.andy_180828 .footer{height:319px;background:#fff url(../img/180828_andy/ko/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang="en"] .andy_180828 .spot{background-image:url(../img/180828_andy/en/bg_spot.jpg)}
+[lang="en"] .andy_180828 .section{background-image:url(../img/180828_andy/en/bg_section.jpg)}
+[lang="en"] .andy_180828 .footer{background-image:url(../img/180828_andy/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang="ja"] .andy_180828 .spot{background-image:url(../img/180828_andy/ja/bg_spot.jpg)}
+[lang="ja"] .andy_180828 .section{background-image:url(../img/180828_andy/ja/bg_section.jpg)}
+[lang="ja"] .andy_180828 .footer{background-image:url(../img/180828_andy/ja/bg_footer.jpg)}
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .andy_180828 .spot{background-image:url(../img/180828_andy/zh_hans/bg_spot.jpg)}
+[lang="zh-Hans"] .andy_180828 .section{background-image:url(../img/180828_andy/zh_hans/bg_section.jpg)}
+[lang="zh-Hans"] .andy_180828 .footer{background-image:url(../img/180828_andy/zh_hans/bg_footer.jpg)}
+/* zh-hant-중국어 번체 */
+[lang="zh-Hant"] .andy_180828 .spot{background-image:url(../img/180828_andy/zh_hant/bg_spot.jpg)}
+[lang="zh-Hant"] .andy_180828 .section{background-image:url(../img/180828_andy/zh_hant/bg_section.jpg)}
+[lang="zh-Hant"] .andy_180828 .footer{background-image:url(../img/180828_andy/zh_hant/bg_footer.jpg)}
+/* th-태국어 */
+[lang="th"] .andy_180828 .spot{background-image:url(../img/180828_andy/th/bg_spot.jpg)}
+[lang="th"] .andy_180828 .section{background-image:url(../img/180828_andy/th/bg_section.jpg)}
+[lang="th"] .andy_180828 .footer{background-image:url(../img/180828_andy/th/bg_footer.jpg)}
+/* vi-베트남어 */
+[lang="vi"] .andy_180828 .spot{background-image:url(../img/180828_andy/vi/bg_spot.jpg)}
+[lang="vi"] .andy_180828 .section{background-image:url(../img/180828_andy/vi/bg_section.jpg)}
+[lang="vi"] .andy_180828 .footer{background-image:url(../img/180828_andy/vi/bg_footer.jpg)}
+
+
+/* bts_180905 */
+.bts_180905 .standardbox{height:100%}
+.bts_180905 .spot{height:504px;background:#d8ecf7 url(../img/180905_bts/ko/bg_spot_v1.jpg) 50% 0 no-repeat}
+.bts_180905 .section{height:804px;background:#d8ecf7 url(../img/180905_bts/ko/bg_section_v2.jpg) 50% 0 no-repeat}
+.bts_180905 .section .btn_buy{position:absolute;bottom:145px;left:50%;margin-left:-163px;width:325px;height:87px}
+.bts_180905 .footer{height:335px;background:#fff url(../img/180905_bts/ko/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang="en"] .bts_180905 .spot{background-image:url(../img/180905_bts/en/bg_spot_v1.jpg)}
+[lang="en"] .bts_180905 .section{background-image:url(../img/180905_bts/en/bg_section_v2.jpg)}
+[lang="en"] .bts_180905 .footer{background-image:url(../img/180905_bts/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang="ja"] .bts_180905 .spot{background-image:url(../img/180905_bts/ja/bg_spot_v1.jpg)}
+[lang="ja"] .bts_180905 .section{background-image:url(../img/180905_bts/ja/bg_section_v2.jpg)}
+[lang="ja"] .bts_180905 .footer{background-image:url(../img/180905_bts/ja/bg_footer.jpg)}
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .bts_180905 .spot{background-image:url(../img/180905_bts/zh_hans/bg_spot_v1.jpg)}
+[lang="zh-Hans"] .bts_180905 .section{background-image:url(../img/180905_bts/zh_hans/bg_section_v2.jpg)}
+[lang="zh-Hans"] .bts_180905 .footer{background-image:url(../img/180905_bts/zh_hans/bg_footer.jpg)}
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .bts_180905 .spot{background-image:url(../img/180905_bts/zh_hant/bg_spot_v2.jpg)}
+[lang="zh-hant"] .bts_180905 .section{background-image:url(../img/180905_bts/zh_hant/bg_section_v2.jpg)}
+[lang="zh-hant"] .bts_180905 .footer{background-image:url(../img/180905_bts/zh_hant/bg_footer.jpg)}
+/* es-스페인어 */
+[lang="es"] .bts_180905 .spot{background-image:url(../img/180905_bts/es/bg_spot_v2.jpg)}
+[lang="es"] .bts_180905 .section{background-image:url(../img/180905_bts/es/bg_section_v2.jpg)}
+[lang="es"] .bts_180905 .footer{background-image:url(../img/180905_bts/es/bg_footer.jpg)}
+/* th-태국어 */
+[lang="th"] .bts_180905 .spot{background-image:url(../img/180905_bts/th/bg_spot_v1.jpg)}
+[lang="th"] .bts_180905 .section{background-image:url(../img/180905_bts/th/bg_section_v2.jpg)}
+[lang="th"] .bts_180905 .footer{background-image:url(../img/180905_bts/th/bg_footer.jpg)}
+/* vi-베트남어 */
+[lang="vi"] .bts_180905 .spot{background-image:url(../img/180905_bts/vi/bg_spot_v2.jpg)}
+[lang="vi"] .bts_180905 .section{background-image:url(../img/180905_bts/vi/bg_section_v2.jpg)}
+[lang="vi"] .bts_180905 .footer{background-image:url(../img/180905_bts/vi/bg_footer.jpg)}
+
+
+/* seventeen_180927 */
+.seventeen_180927 .standardbox{height:100%}
+.seventeen_180927 .spot{height:503px;background:#fec762 url(../img/180927_seventeen/ko/bg_spot.jpg) 50% 0 no-repeat}
+.seventeen_180927 .section{height:1242px;background:#fec762 url(../img/180927_seventeen/ko/bg_section.jpg) 50% 0 no-repeat}
+.seventeen_180927 .section .btn_buy{position:absolute;left:316px; bottom:145px;width:328px;height:87px;}
+.seventeen_180927 .footer{height:323px;background:#fff url(../img/180927_seventeen/ko/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang="en"] .seventeen_180927 .spot{background-image:url(../img/180927_seventeen/en/bg_spot.jpg)}
+[lang="en"] .seventeen_180927 .section{background-image:url(../img/180927_seventeen/en/bg_section.jpg)}
+[lang="en"] .seventeen_180927 .footer{background-image:url(../img/180927_seventeen/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang="ja"] .seventeen_180927 .spot{background-image:url(../img/180927_seventeen/ja/bg_spot.jpg)}
+[lang="ja"] .seventeen_180927 .section{background-image:url(../img/180927_seventeen/ja/bg_section.jpg)}
+[lang="ja"] .seventeen_180927 .footer{background-image:url(../img/180927_seventeen/ja/bg_footer.jpg)}
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .seventeen_180927 .spot{background-image:url(../img/180927_seventeen/zh_hans/bg_spot.jpg)}
+[lang="zh-Hans"] .seventeen_180927 .section{background-image:url(../img/180927_seventeen/zh_hans/bg_section.jpg)}
+[lang="zh-Hans"] .seventeen_180927 .footer{background-image:url(../img/180927_seventeen/zh_hans/bg_footer.jpg)}
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .seventeen_180927 .spot{background-image:url(../img/180927_seventeen/zh_hant/bg_spot.jpg)}
+[lang="zh-hant"] .seventeen_180927 .section{background-image:url(../img/180927_seventeen/zh_hant/bg_section.jpg)}
+[lang="zh-hant"] .seventeen_180927 .footer{background-image:url(../img/180927_seventeen/zh_hant/bg_footer.jpg)}
+/* vi-베트남어 */
+[lang="vi"] .seventeen_180927 .spot{background-image:url(../img/180927_seventeen/vi/bg_spot.jpg)}
+[lang="vi"] .seventeen_180927 .section{background-image:url(../img/180927_seventeen/vi/bg_section.jpg)}
+[lang="vi"] .seventeen_180927 .footer{background-image:url(../img/180927_seventeen/vi/bg_footer.jpg)}
+
+/* jinyoung_181018 */
+.jinyoung_181018 .standardbox{height:100%}
+.jinyoung_181018 .spot{height:502px;background:#9ea6e7 url(../img/181018_jinyoung/ko/bg_spot.jpg) 50% 0 no-repeat}
+.jinyoung_181018 .section{height:920px;background:#9ea6e7 url(../img/181018_jinyoung/ko/bg_section.jpg) 50% 0 no-repeat}
+.jinyoung_181018 .section .btn_buy{position: absolute;left: 327px;bottom: 164px;width: 326px;height: 87px;}
+.jinyoung_181018 .footer{height:318px;background:#fff url(../img/181018_jinyoung/ko/bg_footer.jpg) 50% 0 no-repeat}
+/* en-영문 */
+[lang="en"] .jinyoung_181018 .spot{background-image:url(../img/181018_jinyoung/en/bg_spot.jpg)}
+[lang="en"] .jinyoung_181018 .section{background-image:url(../img/181018_jinyoung/en/bg_section.jpg)}
+[lang="en"] .jinyoung_181018 .footer{background-image:url(../img/181018_jinyoung/en/bg_footer.jpg)}
+/* ja-일어 */
+[lang="ja"] .jinyoung_181018 .spot{background-image:url(../img/181018_jinyoung/ja/bg_spot.jpg)}
+[lang="ja"] .jinyoung_181018 .section{background-image:url(../img/181018_jinyoung/ja/bg_section.jpg)}
+[lang="ja"] .jinyoung_181018 .footer{background-image:url(../img/181018_jinyoung/ja/bg_footer.jpg)}
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .jinyoung_181018 .spot{background-image:url(../img/181018_jinyoung/zh_hans/bg_spot.jpg)}
+[lang="zh-Hans"] .jinyoung_181018 .section{background-image:url(../img/181018_jinyoung/zh_hans/bg_section.jpg)}
+[lang="zh-Hans"] .jinyoung_181018 .footer{background-image:url(../img/181018_jinyoung/zh_hans/bg_footer.jpg)}
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .jinyoung_181018 .spot{background-image:url(../img/181018_jinyoung/zh_hant/bg_spot.jpg)}
+[lang="zh-hant"] .jinyoung_181018 .section{background-image:url(../img/181018_jinyoung/zh_hant/bg_section.jpg)}
+[lang="zh-hant"] .jinyoung_181018 .footer{background-image:url(../img/181018_jinyoung/zh_hant/bg_footer.jpg)}
+/* vi-베트남어 */
+[lang="vi"] .jinyoung_181018 .spot{background-image:url(../img/181018_jinyoung/vi/bg_spot.jpg)}
+[lang="vi"] .jinyoung_181018 .section{background-image:url(../img/181018_jinyoung/vi/bg_section.jpg)}
+[lang="vi"] .jinyoung_181018 .footer{background-image:url(../img/181018_jinyoung/vi/bg_footer.jpg)}
+
+/* seventeen_181214 */
+.seventeen_181214 .standardbox { height: 100%; }
+.seventeen_181214 .spot { height: 503px; background: #4d4773 url(../img/181214_seventeen/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.seventeen_181214 .section { height: 833px; background: #4d4773 url(../img/181214_seventeen/ko/bg_section.jpg) 50% 0 no-repeat; }
+.seventeen_181214 .section .btn_buy { position: absolute; left: 383px; top: 108px; width: 327px; height: 90px; }
+.seventeen_181214 .footer { height: 319px; background: #fff url(../img/181214_seventeen/ko/bg_footer.jpg) 50% 0 no-repeat; }
+
+/* en-영문 */
+[lang="en"] .seventeen_181214 .spot { background-image: url(../img/181214_seventeen/en/bg_spot.jpg); }
+[lang="en"] .seventeen_181214 .section { background-image: url(../img/181214_seventeen/en/bg_section.jpg); }
+[lang="en"] .seventeen_181214 .footer { background-image: url(../img/181214_seventeen/en/bg_footer.jpg); }
+
+/* ja-일어 */
+[lang="ja"] .seventeen_181214 .spot { background-image: url(../img/181214_seventeen/ja/bg_spot.jpg); }
+[lang="ja"] .seventeen_181214 .section { background-image: url(../img/181214_seventeen/ja/bg_section.jpg); }
+[lang="ja"] .seventeen_181214 .footer { background-image: url(../img/181214_seventeen/ja/bg_footer.jpg); }
+
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .seventeen_181214 .spot { background-image: url(../img/181214_seventeen/zh_hans/bg_spot.jpg); }
+[lang="zh-Hans"] .seventeen_181214 .section { background-image: url(../img/181214_seventeen/zh_hans/bg_section.jpg); }
+[lang="zh-Hans"] .seventeen_181214 .footer { background-image: url(../img/181214_seventeen/zh_hans/bg_footer.jpg); }
+
+/* zh-Hant-중국어 번체 */
+[lang="zh-Hant"] .seventeen_181214 .spot { background-image: url(../img/181214_seventeen/zh_hant/bg_spot.jpg); }
+[lang="zh-Hant"] .seventeen_181214 .section { background-image: url(../img/181214_seventeen/zh_hant/bg_section.jpg); }
+[lang="zh-Hant"] .seventeen_181214 .footer { background-image: url(../img/181214_seventeen/zh_hant/bg_footer.jpg); }
+
+/* vi-베트남어 */
+[lang="vi"] .seventeen_181214 .spot { background-image: url(../img/181214_seventeen/vi/bg_spot.jpg); }
+[lang="vi"] .seventeen_181214 .section { background-image: url(../img/181214_seventeen/vi/bg_section.jpg); }
+[lang="vi"] .seventeen_181214 .footer { background-image: url(../img/181214_seventeen/vi/bg_footer.jpg); }
+
+
+/* goldenchild_181227 */
+.goldenchild_181227 .standardbox { height: 100%; }
+.goldenchild_181227 .spot { height: 503px; background: #4dafee url(../img/181227_goldenchild/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.goldenchild_181227 .section { height: 1530px; background: #4dafee url(../img/181227_goldenchild/ko/bg_section.jpg) 50% 0 no-repeat; }
+.goldenchild_181227 .section .btn { display:block; width: 237px; height: 84px; position: absolute; border-radius: 20px;}
+.goldenchild_181227 .section .btn_buy{ left: 427px; top: 576px;}
+.goldenchild_181227 .section .btn_try{ left: 360px; top: 1316px;}
+.goldenchild_181227 .footer { height: 319px; background: #fff url(../img/181227_goldenchild/ko/bg_footer.jpg) 50% 0 no-repeat; }
+
+/* en-영문 */
+[lang="en"] .goldenchild_181227 .spot {background-image: url(../img/181227_goldenchild/en/bg_spot.jpg); }
+[lang="en"] .goldenchild_181227 .section {height:1563px; background-image: url(../img/181227_goldenchild/en/bg_section.jpg); }
+[lang="en"] .goldenchild_181227 .section .btn {width: 238px; height: 84px;}
+[lang="en"] .goldenchild_181227 .section .btn_try{ width:349px; left: 306px; top: 1349px;}
+[lang="en"] .goldenchild_181227 .footer { background-image: url(../img/181227_goldenchild/en/bg_footer.jpg); }
+
+/* day6_ */
+.day6_190107 .standardbox { height: 100%; }
+.day6_190107 .spot { height: 483px; background: #fff4cc url(../img/190107_day6/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.day6_190107 .section { height: 1262px; background: #fff4cc url(../img/190107_day6/ko/bg_section.jpg) 50% 0 no-repeat; }
+.day6_190107 .section .btn_buy { position: absolute; left: 317px; bottom: 142px; width: 327px; height: 90px; }
+.day6_190107 .footer { height: 323px;background: url(../img/190107_day6/ko/bg_footer.jpg) 50% 0 no-repeat;border-top:1px solid #dedcea;}
+
+/* en-영문 */
+[lang="en"] .day6_190107 .spot { background-image: url(../img/190107_day6/en/bg_spot.jpg); }
+[lang="en"] .day6_190107 .section { background-image: url(../img/190107_day6/en/bg_section.jpg); }
+[lang="en"] .day6_190107 .footer { background-image: url(../img/190107_day6/en/bg_footer.jpg); }
+
+/* ja-일어 */
+[lang="ja"] .day6_190107 .spot { background-image: url(../img/190107_day6/ja/bg_spot.jpg); }
+[lang="ja"] .day6_190107 .section { background-image: url(../img/190107_day6/ja/bg_section.jpg); }
+[lang="ja"] .day6_190107 .footer { background-image: url(../img/190107_day6/ja/bg_footer.jpg); }
+
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .day6_190107 .spot { background-image: url(../img/190107_day6/zh_hans/bg_spot.jpg); }
+[lang="zh-Hans"] .day6_190107 .section { background-image: url(../img/190107_day6/zh_hans/bg_section.jpg); }
+[lang="zh-Hans"] .day6_190107 .footer { background-image: url(../img/190107_day6/zh_hans/bg_footer.jpg); }
+
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .day6_190107 .spot { background-image: url(../img/190107_day6/zh_hant/bg_spot.jpg); }
+[lang="zh-hant"] .day6_190107 .section { background-image: url(../img/190107_day6/zh_hant/bg_section.jpg); }
+[lang="zh-hant"] .day6_190107 .footer { background-image: url(../img/190107_day6/zh_hant/bg_footer.jpg); }
+
+/* vi-베트남어 */
+[lang="vi"] .day6_190107 .spot { background-image: url(../img/190107_day6/vi/bg_spot.jpg); }
+[lang="vi"] .day6_190107 .section { background-image: url(../img/190107_day6/vi/bg_section.jpg); }
+[lang="vi"] .day6_190107 .footer { background-image: url(../img/190107_day6/vi/bg_footer.jpg); }
+
+/* 19.01.14_sj_returns2 */
+.sj_returns2_190114 .spot {height:540px; background: #e8f0dd url("../img/190114_sj_returns2/ko/bg_spot.jpg") 50% 0 no-repeat;}
+.sj_returns2_190114 .section {position: relative;; height:1060px; background: #e8f0dd url("../img/190114_sj_returns2/ko/bg_section.jpg") 50% 0 no-repeat;}
+.sj_returns2_190114 .section .btn_buy {position: absolute; bottom:166px; left:50%; width:323px; height:86px; margin:0 0 0 -95px;}
+.sj_returns2_190114 .footer {height:321px; background: #fff url("../img/190114_sj_returns2/ko/bg_footer.jpg") 50% 0 no-repeat;}
+/* en */
+[lang="en"] .sj_returns2_190114 .spot {background-image:url("../img/190114_sj_returns2/en/bg_spot.jpg");}
+[lang="en"] .sj_returns2_190114 .section {background-image:url("../img/190114_sj_returns2/en/bg_section.jpg");}
+[lang="en"] .sj_returns2_190114 .footer {background-image:url("../img/190114_sj_returns2/en/bg_footer.jpg");}
+/* ja */
+[lang="ja"] .sj_returns2_190114 .spot {background-image:url("../img/190114_sj_returns2/ja/bg_spot.jpg");}
+[lang="ja"] .sj_returns2_190114 .section {background-image:url("../img/190114_sj_returns2/ja/bg_section.jpg");}
+[lang="ja"] .sj_returns2_190114 .footer {background-image:url("../img/190114_sj_returns2/ja/bg_footer.jpg");}
+/* zh-Hans */
+[lang="zh-Hans"] .sj_returns2_190114 .spot {background-image:url("../img/190114_sj_returns2/zh-Hans/bg_spot.jpg");}
+[lang="zh-Hans"] .sj_returns2_190114 .section {background-image:url("../img/190114_sj_returns2/zh-Hans/bg_section.jpg");}
+[lang="zh-Hans"] .sj_returns2_190114 .footer {background-image:url("../img/190114_sj_returns2/zh-Hans/bg_footer.jpg");}
+/* zh-Hant */
+[lang="zh-Hant"] .sj_returns2_190114 .spot {background-image:url("../img/190114_sj_returns2/zh-Hant/bg_spot.jpg");}
+[lang="zh-Hant"] .sj_returns2_190114 .section {background-image:url("../img/190114_sj_returns2/zh-Hant/bg_section.jpg");}
+[lang="zh-Hant"] .sj_returns2_190114 .footer {background-image:url("../img/190114_sj_returns2/zh-Hant/bg_footer.jpg");}
+/* vi */
+[lang="vi"] .sj_returns2_190114 .spot {background-image:url("../img/190114_sj_returns2/vi/bg_spot.jpg");}
+[lang="vi"] .sj_returns2_190114 .section {background-image:url("../img/190114_sj_returns2/vi/bg_section.jpg");}
+[lang="vi"] .sj_returns2_190114 .footer {background-image:url("../img/190114_sj_returns2/vi/bg_footer.jpg");}
+
+/* girls_generation_181129 */
+.girls_generation_181129 .standardbox { height: 100%; }
+.girls_generation_181129 .spot { height: 503px; background: #e5f8ff url(../img/181129_girls_generation/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.girls_generation_181129 .section { height: 1242px; background: #e5f8ff url(../img/181129_girls_generation/ko/bg_section.jpg) 50% 0 no-repeat; }
+.girls_generation_181129 .section .btn_buy { position: absolute; left: 317px; bottom: 142px; width: 327px; height: 90px; }
+.girls_generation_181129 .footer { height: 323px; background: #fff url(../img/181129_girls_generation/ko/bg_footer.jpg) 50% 0 no-repeat; }
+
+/* en-영문 */
+[lang="en"] .girls_generation_181129 .spot { background-image: url(../img/181129_girls_generation/en/bg_spot.jpg); }
+[lang="en"] .girls_generation_181129 .section { background-image: url(../img/181129_girls_generation/en/bg_section.jpg); }
+[lang="en"] .girls_generation_181129 .footer { background-image: url(../img/181129_girls_generation/en/bg_footer.jpg); }
+
+/* ja-일어 */
+[lang="ja"] .girls_generation_181129 .spot { background-image: url(../img/181129_girls_generation/ja/bg_spot.jpg); }
+[lang="ja"] .girls_generation_181129 .section { background-image: url(../img/181129_girls_generation/ja/bg_section.jpg); }
+[lang="ja"] .girls_generation_181129 .footer { background-image: url(../img/181129_girls_generation/ja/bg_footer.jpg); }
+
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .girls_generation_181129 .spot { background-image: url(../img/181129_girls_generation/zh_hans/bg_spot.jpg); }
+[lang="zh-Hans"] .girls_generation_181129 .section { background-image: url(../img/181129_girls_generation/zh_hans/bg_section.jpg); }
+[lang="zh-Hans"] .girls_generation_181129 .footer { background-image: url(../img/181129_girls_generation/zh_hans/bg_footer.jpg); }
+
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .girls_generation_181129 .spot { background-image: url(../img/181129_girls_generation/zh_hant/bg_spot.jpg); }
+[lang="zh-hant"] .girls_generation_181129 .section { background-image: url(../img/181129_girls_generation/zh_hant/bg_section.jpg); }
+[lang="zh-hant"] .girls_generation_181129 .footer { background-image: url(../img/181129_girls_generation/zh_hant/bg_footer.jpg); }
+
+/* vi-베트남어 */
+[lang="vi"] .girls_generation_181129 .spot { background-image: url(../img/181129_girls_generation/vi/bg_spot.jpg); }
+[lang="vi"] .girls_generation_181129 .section { background-image: url(../img/181129_girls_generation/vi/bg_section.jpg); }
+[lang="vi"] .girls_generation_181129 .footer { background-image: url(../img/181129_girls_generation/vi/bg_footer.jpg); }
+
+/* vehind_190114 */
+.vehind_190114 .standardbox { height: 100%; }
+.vehind_190114 .content { position:relative;}
+.vehind_190114 .bg_l { position:absolute;top:122px;right:50%;width:50%;height:3030px;background:url(../img/190114_vehind/ko/bg_pattern_l.jpg) repeat;z-index:-1;}
+.vehind_190114 .bg_r { position:absolute;top:122px;right:0;width:50%;height:3030px;background:url(../img/190114_vehind/ko/bg_pattern_r.jpg) repeat;z-index:-1;}
+.vehind_190114 .spot { height: 526px; background:url(../img/190114_vehind/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.vehind_190114 .section { height: 1415px; background:url(../img/190114_vehind/ko/bg_section.jpg) 50% 0 no-repeat; }
+.vehind_190114 .section ul>li .btn_buy { width:236px;height:75px;position: absolute;}
+.vehind_190114 .section ul>li:nth-child(1) .btn_buy {left: 91px; top:664px;}
+.vehind_190114 .section ul>li:nth-child(2) .btn_buy {left: 361px; top:664px;}
+.vehind_190114 .section ul>li:nth-child(3) .btn_buy {left: 631px; top:664px;}
+.vehind_190114 .section ul>li:nth-child(4) .btn_buy {left: 91px; top:1168px;}
+.vehind_190114 .section ul>li:nth-child(5) .btn_buy {left: 361px; top:1168px;}
+.vehind_190114 .section ul>li:nth-child(6) .btn_buy {left: 631px; top:1168px;}
+.vehind_190114 .section2 { height: 1089px; background:url(../img/190114_vehind/ko/bg_section2.jpg) 50% 0 no-repeat; }
+.vehind_190114 .section2 .btn_try { width:353px; height:88px; position:absolute;left: 308px;bottom:183px;}
+.vehind_190114 .footer { height: 309px;background:#fff url(../img/190114_vehind/ko/bg_footer.jpg) 50% 0 no-repeat;}
+
+/* en-영문 */
+[lang="en"] .vehind_190114 .bg_l { height:3119px;background:url(../img/190114_vehind/en/bg_pattern_l.jpg) repeat;}
+[lang="en"] .vehind_190114 .bg_r { height:3119px;background:url(../img/190114_vehind/en/bg_pattern_r.jpg) repeat;}
+[lang="en"] .vehind_190114 .spot { height: 521px;background-image:url(../img/190114_vehind/en/bg_spot.jpg); }
+[lang="en"] .vehind_190114 .section { height: 1440px; background-image:url(../img/190114_vehind/en/bg_section.jpg); }
+[lang="en"] .vehind_190114 .section ul>li .btn_buy {width:238px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:689px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:689px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:689px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1193px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1193px;}
+[lang="en"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1193px;}
+[lang="en"] .vehind_190114 .section2 { height: 1158px; background-image:url(../img/190114_vehind/en/bg_section2.jpg); }
+[lang="en"] .vehind_190114 .section2 .btn_try{ left:309px;}
+[lang="en"] .vehind_190114 .footer { height: 319px;background-image:url(../img/190114_vehind/en/bg_footer.jpg); }
+
+/* ja-일어 */
+[lang="ja"] .vehind_190114 .bg_l { height:3101px;background:url(../img/190114_vehind/ja/bg_pattern_l.jpg) repeat;}
+[lang="ja"] .vehind_190114 .bg_r { height:3101px;background:url(../img/190114_vehind/ja/bg_pattern_r.jpg) repeat;}
+[lang="ja"] .vehind_190114 .spot { height:524px;background-image:url(../img/190114_vehind/ja/bg_spot.jpg); }
+[lang="ja"] .vehind_190114 .section { height: 1466px; background-image:url(../img/190114_vehind/ja/bg_section.jpg); }
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:717px;}
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:717px;}
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:717px;}
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1221px;}
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1221px;}
+[lang="ja"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1221px;}
+[lang="ja"] .vehind_190114 .section2 { height: 1111px; background-image:url(../img/190114_vehind/ja/bg_section2.jpg); }
+[lang="ja"] .vehind_190114 .section2 .btn_try { width:352px;left: 309px;bottom:184px;}
+[lang="ja"] .vehind_190114 .footer { height: 319px; background-image:url(../img/190114_vehind/ja/bg_footer.jpg); }
+
+
+/* zh-hans-중국어 간체 */
+[lang="zh-Hans"] .vehind_190114 .bg_l{ height:3069px;background:url(../img/190114_vehind/zh_hans/bg_pattern_l.jpg) repeat;}
+[lang="zh-Hans"] .vehind_190114 .bg_r{ height:3069px;background:url(../img/190114_vehind/zh_hans/bg_pattern_r.jpg) repeat;}
+[lang="zh-Hans"] .vehind_190114 .spot { height:526px;background-image:url(../img/190114_vehind/zh_hans/bg_spot.jpg); }
+[lang="zh-Hans"] .vehind_190114 .section { height: 1414px; background-image:url(../img/190114_vehind/zh_hans/bg_section.jpg); }
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:663px;}
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:663px;}
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:663px;}
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1167px;}
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1167px;}
+[lang="zh-Hans"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1167px;}
+[lang="zh-Hans"] .vehind_190114 .section2 { height: 1129px; background-image:url(../img/190114_vehind/zh_hans/bg_section2.jpg); }
+[lang="zh-Hans"] .vehind_190114 .section2 .btn_try{ width:352px;left: 309px;bottom:183px;}
+[lang="zh-Hans"] .vehind_190114 .footer { height: 320px; background-image:url(../img/190114_vehind/zh_hans/bg_footer.jpg); }
+
+/* zh-hant-중국어 번체 */
+[lang="zh-hant"] .vehind_190114 .bg_l{ height:3069px;background:url(../img/190114_vehind/zh_hant/bg_pattern_l.jpg) repeat;}
+[lang="zh-hant"] .vehind_190114 .bg_r{ height:3069px;background:url(../img/190114_vehind/zh_hant/bg_pattern_r.jpg) repeat;}
+[lang="zh-hant"] .vehind_190114 .spot { height:524px;background-image:url(../img/190114_vehind/zh_hant/bg_spot.jpg); }
+[lang="zh-hant"] .vehind_190114 .section { height: 1414px; background-image:url(../img/190114_vehind/zh_hant/bg_section.jpg); }
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:663px;}
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:663px;}
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:663px;}
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1167px;}
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1167px;}
+[lang="zh-hant"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1167px;}
+[lang="zh-hant"] .vehind_190114 .section2 { height: 1087px; background-image:url(../img/190114_vehind/zh_hant/bg_section2.jpg); }
+[lang="zh-hant"] .vehind_190114 .section2 .btn_try{ width:352px;left:309px;}
+[lang="zh-hant"] .vehind_190114 .footer { height: 319px; background-image:url(../img/190114_vehind/zh_hant/bg_footer.jpg); }
+
+
+/* vi-베트남어 */
+[lang="vi"] .vehind_190114 .bg_l { height:3125px;background:url(../img/190114_vehind/vi/bg_pattern_l.jpg) repeat;}
+[lang="vi"] .vehind_190114 .bg_r{ height:3125px;background:url(../img/190114_vehind/vi/bg_pattern_r.jpg) repeat;}
+[lang="vi"] .vehind_190114 .spot { height:551px;background-image:url(../img/190114_vehind/vi/bg_spot.jpg); }
+[lang="vi"] .vehind_190114 .section { height: 1467px; background-image:url(../img/190114_vehind/vi/bg_section.jpg); }
+[lang="vi"] .vehind_190114 .section ul>li .btn_buy { width:237px;height:76px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:717px;left:91px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:717px;left:361px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:717px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1221px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1221px;}
+[lang="vi"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1221px;}
+[lang="vi"] .vehind_190114 .section2 { height: 1107px; background-image: url(../img/190114_vehind/vi/bg_section2.jpg); }
+[lang="vi"] .vehind_190114 .section2 .btn_try{ left:309px;bottom:185px;}
+[lang="vi"] .vehind_190114 .footer { height: 318px; background-image:url(../img/190114_vehind/vi/bg_footer.jpg); }
+
+
+/* th - 태국어 */
+[lang="th"] .vehind_190114 .bg_l { height:3078px;background:url(../img/190114_vehind/th/bg_pattern_l.jpg) repeat;}
+[lang="th"] .vehind_190114 .bg_r{ height:3078px;background:url(../img/190114_vehind/th/bg_pattern_r.jpg) repeat;}
+[lang="th"] .vehind_190114 .spot { height:521px;background-image:url(../img/190114_vehind/th/bg_spot.jpg); }
+[lang="th"] .vehind_190114 .section { height: 1438px; background-image:url(../img/190114_vehind/th/bg_section.jpg); }
+[lang="th"] .vehind_190114 .section ul>li .btn_buy { width: 237px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(1) .btn_buy { top:690px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(2) .btn_buy { top:690px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(3) .btn_buy { top:690px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(4) .btn_buy { top:1194px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(5) .btn_buy { top:1194px;}
+[lang="th"] .vehind_190114 .section ul>li:nth-child(6) .btn_buy { top:1194px;}
+[lang="th"] .vehind_190114 .section2 { height: 1119px; background-image: url(../img/190114_vehind/th/bg_section2.jpg); }
+[lang="th"] .vehind_190114 .section2 .btn_try{ width:353px;height:89px;left:309px;bottom:184px;}
+[lang="th"] .vehind_190114 .footer { height: 319px; background-image:url(../img/190114_vehind/th/bg_footer.jpg); }
+
+/* lovelyz */
+.lovelyz_190125 .standardbox { height: 100%; }
+.lovelyz_190125 .spot { height: 503px; background: #ebf8ff url(../img/190125_lovelyz/ko/bg_spot.jpg) 50% 0 no-repeat; }
+.lovelyz_190125 .section { height: 878px; background: #ebf8ff url(../img/190125_lovelyz/ko/bg_section.jpg) 50% 0 no-repeat; }
+.lovelyz_190125 .section1 { height: 835px; background: #ebf8ff url(../img/190125_lovelyz/ko/bg_section1.jpg) 50% 0 no-repeat; }
+.lovelyz_190125 .section .btn_buy { position: absolute; left: 317px; bottom: 50px; width: 327px; height: 87px; }
+.lovelyz_190125 .section1 .btn_buy { position: absolute; left: 317px; bottom: 167px; width: 327px; height: 87px; }
+.lovelyz_190125 .footer { height: 323px;background: url(../img/190125_lovelyz/ko/bg_footer.jpg) 50% 0 no-repeat;border-top:1px solid #dedcea;}
+
+/* en-영문 */
+[lang="en"] .lovelyz_190125 .spot { background-image: url(../img/190125_lovelyz/en/bg_spot.jpg); }
+[lang="en"] .lovelyz_190125 .section { background-image: url(../img/190125_lovelyz/en/bg_section.jpg); }
+[lang="en"] .lovelyz_190125 .section1 { background-image: url(../img/190125_lovelyz/en/bg_section1.jpg); }
+[lang="en"] .lovelyz_190125 .footer { background-image: url(../img/190125_lovelyz/en/bg_footer.jpg); }
+
+

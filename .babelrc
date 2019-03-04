@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./"],
+                "alias": {
+                    "@actions": "./actions",
+                    "@assets": "./assets",
+                    "@components": "./components",
+                    "@utils": "./utils",
+                    "@constants":"./constants",
+                    "@selectors":"./selectors"
+                }
+            }
+        ]
+    ],
+    "presets": ["next/babel"]
+}

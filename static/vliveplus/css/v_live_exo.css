@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'나눔고딕',NanumGothic,'돋움',Dotum,AppleGothic,sans-serif;font-size:14px}
+img,fieldset,button{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:none}
+button{cursor:pointer}
+img{vertical-align:top}
+select{vertical-align:middle}
+table{border-collapse:collapse}
+.blind{display:block;overflow:hidden;position:absolute;top:-1000em;left:0;width:0;height:0;font-size:0;line-height:0}
+html,body,#container{height:100%}
+
+/* exo 판매 프로모션 - 개인정보 팝업 */
+#wrap{width:800px;margin:0 auto}
+.header{position:relative;height:387px;background-repeat:no-repeat;background-position: 50% 0}
+.header .choice{position:absolute;top:14px;left:50%;margin-left:285px;display:block;width:100px;height:20px;text-align:center;font-size:14px;color:#fff;}
+.header ul{position:absolute;top:41px;left:50%;margin-left:251px;width:124px;height:221px;background:url(../img/img_select_box.png) no-repeat}
+.header ul li:first-child{padding-top:18px}
+.header ul li{padding-left:17px;padding-top:12px}
+.header ul li a{font-weight:bold;color:#3d5adf}
+.header ul li a:hover{color:#000}
+
+.info_section{width:100%;background-color:#eee}
+.info{position:relative;height:793px;background-repeat:no-repeat;background-position:50% 0}
+.info label{position:absolute;width:98px;height:46px;left:133px}
+.info input{appearance:normal;-moz-appearance:normal;-webkit-appearance:normal;position:absolute;left:271px;height:44px;padding-left:17px;border:1px solid #e5e5e5;background-color:#fff;color:#595959}
+.label_username{top:102px}
+.label_useremail{top:168px}
+.label_cellphone{top:233px}
+.label_age{top:298px}
+.label_city{top:362px}
+.info .ipt_username{top:102px;width:168px}
+.info .ipt_useremail{top:168px;width:364px}
+.info .ipt_cellphone{top:233px;width:77px}
+.info .ipt_cellphone_2{top:233px;left:386px;width:266px;padding:0;text-align:center}
+.info .ipt_age{top:298px;width:168px}
+.info .ipt_city{top:362px;width:168px}
+
+.btn_confirm{position:absolute;top:674px;right:50%;width:280px;height:49px;margin-right:-141px}
+
+.info2{position:relative;height:743px;background-repeat:no-repeat;background-position:50% 0}
+.info2 .btn_exit{position:absolute;top:500px;left:50%;margin-left:-140px;display:block;width:282px;height:50px}
+
+/* 국문 */
+/*[lang=ko]*/
+[lang=ko] .header{background-image:url(../img/kr/i_header_kr.jpg)}
+[lang=ko] .info{background-image:url(../img/kr/i_con_kr.jpg)}
+[lang=ko] .info2{background-image:url(../img/kr/i_con2_kr.jpg)}
+
+/* 일본 */
+/*[lang=ja]*/
+[lang=ja] .header{background-image:url(../img/ja/i_header_ja.jpg)}
+[lang=ja] .info{background-image:url(../img/ja/i_con_ja.jpg)}
+[lang=ja] .info2{background-image:url(../img/ja/i_con2_ja.jpg)}
+
+/* 글로벌-영문 */
+/*[lang=en]*/
+[lang=en] .header{background-image:url(../img/en/i_header_en.jpg)}
+[lang=en] .info{background-image:url(../img/en/i_con_en.jpg);height:793px}
+[lang=en] .info .ipt_cellphone{width:107px}
+[lang=en] .info .ipt_cellphone_2{left:406px}
+[lang=en] .info2{background-image:url(../img/en/i_con2_en.jpg)}
+
+/* 대만 */
+/*[lang=tw-TW]*/
+[lang=tw] .header{background-image:url(../img/tw/i_header_tw.jpg)}
+[lang=tw] .info{background-image:url(../img/tw/i_con_tw.jpg)}
+[lang=tw] .info2{background-image:url(../img/tw/i_con2_tw.jpg)}
+
+/* 태국 */
+/*[lang=th-TH]*/
+[lang=th] .header{background-image:url(../img/th/i_header_th.jpg)}
+[lang=th] .info{background-image:url(../img/th/i_con_th.jpg)}
+[lang=th] .info2{background-image:url(../img/th/i_con2_th.jpg)}
+
+/* 스페인 어 */
+/*[lang=sp]*/
+[lang=sp] .header{background-image:url(../img/sp/i_header_sp.jpg)}
+[lang=sp] .info{background-image:url(../img/sp/i_con_sp.jpg)}
+[lang=sp] .info2{background-image:url(../img/sp/i_con2_sp.jpg)}
+
+[lang=sp] .info{position:relative}
+[lang=sp] form .country_num{position:absolute;top:234px;left:50%;margin-left:-128px;display:block;width:94px;height:36px;padding-top:8px;line-height:15px;font-size:14px;text-align:center;color:#a9a9a9}
+
+/* 베트남 */
+/*[lang=ve]*/
+[lang=vi] .header{background-image:url(../img/vi/i_header_vi.jpg)}
+[lang=vi] .info{background-image:url(../img/vi/i_con_vi.jpg)}
+[lang=vi] .info2{background-image:url(../img/vi/i_con2_vi.jpg)}
+[lang=vi] .info .ipt_cellphone{font-size:11px}
+
+
