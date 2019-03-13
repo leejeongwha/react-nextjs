@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 9009",
-    "pm2-next": "next build && pm2 start ./node_modules/next/dist/bin/next-start",
-    "pm2-next-cluster": "next build && pm2 start ./node_modules/next/dist/bin/next-start -i max"
+    "pm2-next": "next build && pm2 start ./node_modules/next/dist/bin/next-start --name cmd_react",
+    "pm2-next-cluster": "next build && pm2 start ./node_modules/next/dist/bin/next-start --name cmd_react -i max"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^4.1.13",
