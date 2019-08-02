@@ -1,2 +1,3 @@
-# naver_cmd_react
-캠페인 리액트 프로젝트
+# edwith-react-web
+
+edwith 리액트 프로젝트
