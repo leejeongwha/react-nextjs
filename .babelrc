@@ -3,17 +3,33 @@
         [
             "module-resolver",
             {
-                "root": ["./"],
+                "root": [
+                    "./"
+                ],
                 "alias": {
                     "@actions": "./actions",
                     "@assets": "./assets",
                     "@components": "./components",
                     "@utils": "./utils",
-                    "@constants":"./constants",
-                    "@selectors":"./selectors"
+                    "@constants": "./constants",
+                    "@selectors": "./selectors"
                 }
+            }
+        ],
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
             }
         ]
     ],
-    "presets": ["next/babel"]
+    "presets": [
+        "next/babel"
+    ]
 }

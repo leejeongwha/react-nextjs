@@ -1,10 +1,24 @@
 import React, { PureComponent } from 'react';
 import Head from 'next/head';
 import Header from '@components/common/Header';
+import { observable } from 'mobx';
+import { observer } from 'mobx-react';
 
+//내부에서만 사용되는 store
+class Data {
+    @observable title = "바뀌기전 타이틀";
+}
+
+@observer
 class Start extends PureComponent {
     static async getInitialProps({ ctx }) {
         return {};
+    }
+
+    data = new Data();
+
+    change = () => {
+        this.data.title = "포인트선물 : 네이버페이";
     }
 
     render() {
@@ -24,10 +38,9 @@ class Start extends PureComponent {
                     <meta property="og:article:author" content="네이버 페이" />
                     <meta property="og:article:author:url" content="http://pay.naver.com/" />
 
-                    <title>포인트선물 : 네이버페이</title>
+                    <title>{this.data.title}</title>
                     <link rel="stylesheet" type="text/css" href="https://m-campaign.naver.com/npay/event/template/header/css/header.css"></link>
                     <link rel="stylesheet" type="text/css" href="https://m-campaign.naver.com/npay/pointgift_friend/css/giftpoint.css" />
-                    <link rel="stylesheet" type="text/css" href="https://m-campaign.naver.com/npay/pointgift_friend/css/web_font.css" />
                 </Head>
                 <div className="promotion_wrap">
                     <Header />
@@ -121,7 +134,7 @@ class Start extends PureComponent {
                                             <h2>포인트선물 행운포인트</h2>
                                             <strong className="title">친구 10명에게 포인트선물한 분 대상,<br />100원~1만원 행운포인트 드려요!</strong>
                                             <p className="sub_txt">(실명인증 기준 1인당 1회 받기 가능)</p>
-                                            <a href="#" className="event_link"><span className="blind">open 행운포인트 받기</span></a>
+                                            <a href="#" onClick={this.change} className="event_link"><span className="blind">open 행운포인트 받기</span></a>
                                             <dl className="event_info">
                                                 <dt>이벤트 내용</dt>
                                                 <dd>
