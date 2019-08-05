@@ -30,7 +30,7 @@ edwith 리액트 프로젝트
     <li>ln -s node-v11.10.1-linux-x64.tar.xz node</li>
   </ul>
 
-  <li>.bash_profile에 아래와 같이 PATH 설정</li>
+  <li>irteam계정 로그인 후 .bash_profile에 아래와 같이 PATH 설정</li>
   <ul>
     <li>PATH=$PATH:$HOME/.local/bin:$HOME/bin:/home1/irteam/apps/node/bin</li>
   </ul>
