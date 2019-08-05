@@ -48,16 +48,15 @@ edwith 리액트 프로젝트
   <li>테스트를 위하여 git clone 하여 프로젝트 파일 가져옴</li>
   <ul>
     <li>/home1/irteam/deploy 폴더에서 git clone</li>
-    <li>/home1/irteam/deploy/naver_cmd_react 폴더로 이동</li>
-    <li>git check develop</li>
+    <li>/home1/irteam/deploy/edwith-react-web 폴더로 이동</li>
     <li>yarn 명령어 수행하여 디펜던시 다운로드</li>
-    <li>yarn pm2-next-cluster 명령어 수행하여 백그라운드에서 실행</li>
+    <li>yarn pm2-next 명령어 수행하여 백그라운드에서 실행</li>
   </ul>
 
-  <li>로그 확인을 위하여 심볼릭 링크 추가 및 rogroate 설치 및 설정</li>
+  <li>로그 확인을 위하여 심볼릭 링크 추가 및 rogrotate 설치 및 설정</li>
   <ul>
-  <li>/home1/irteam/logs 에서 ln -s /home1/irteam/.pm2/logs pm2</li>
-  <li>pm2 install pm2-logrotate</li>
-  <li>pm2 set pm2-logroate:dateFormat 'YYYY-MM-DD'</li>
+    <li>/home1/irteam/logs 에서 ln -s /home1/irteam/.pm2/logs pm2</li>
+    <li>pm2 install pm2-logrotate</li>
+    <li>pm2 set pm2-logroate:dateFormat 'YYYY-MM-DD'</li>
   </ul>
 </ol>
