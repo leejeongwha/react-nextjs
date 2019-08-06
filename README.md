@@ -7,7 +7,6 @@ edwith 리액트 프로젝트
 ---
 ## FUNC
 - mobx  
-- storybook
 - pm2
 ---
 ## DOC
@@ -19,7 +18,6 @@ edwith 리액트 프로젝트
 - yarn 설치 (brew install yarn)
 - 프로젝트 폴더 이동하여 yarn 명령어 실행 하게 되면 dependency 다운로드
 - yarn dev명령어로 서버 시작 (3000번포트)
-- yarn storybook (9009포트, 컴포넌트 단위 확인 및 마크업 확인 용도)
 ---
 ## 서버 환경 설정
 <ol> 
