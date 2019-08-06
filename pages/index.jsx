@@ -44,9 +44,19 @@ class Main extends PureComponent {
     }
 
     //lecture detail 그려주기
-    drawLectureDetail = () => {
-        return this.props.data.map((item) =>
-            <LectureDetail key={item.id} item={item} />
+    drawManualCurationList = (contType) => {
+        return this.props.data.mainManualCurationList.filter(function (item) {
+            return item.contType == contType;
+        }).map((item) =>
+            <LectureDetail key={item.contId} item={item} />
+        );
+    }
+
+    drawAutoCurationList = (contType) => {
+        return this.props.data.mainAutoCurationList.filter(function (item) {
+            return item.contType == contType;
+        }).map((item) =>
+            <LectureDetail key={item.contId} item={item} />
         );
     }
 
@@ -56,7 +66,7 @@ class Main extends PureComponent {
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
-                    <title>부스트코드</title>
+                    <title>edwith</title>
                     <link rel="stylesheet" type="text/css" href="/static/css/m.edwith.css" />
                     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
                 </Head>
@@ -70,14 +80,14 @@ class Main extends PureComponent {
                                 <section className="recommend_lecture_box">
                                     <h3 className="lecture_tit">이번에 추가된 리스트 입니다. #Back_end #Front_end #Data #Practice #Mobile</h3>
                                     <ul className="recommend_lecture_list">
-                                        {this.drawLectureDetail()}
+                                        {this.drawManualCurationList("LECTURE")}
                                     </ul>
                                     <a href="#" className="btn_unfold_list">더보기 <em>4 / 14</em></a>
                                 </section>
                                 <section className="recommend_lecture_box">
                                     <h3 className="lecture_tit">AI Techknowledge.......#머신러닝 #딥러닝 #Reinforcement_learning #etc</h3>
                                     <ul className="recommend_lecture_list">
-                                        {this.drawLectureDetail()}
+                                        {this.drawAutoCurationList("COURSE")}
                                     </ul>
                                     <a href="#" className="btn_unfold_list">더보기 <em>4 / 12</em></a>
                                 </section>
@@ -85,7 +95,7 @@ class Main extends PureComponent {
                                 <section className="recommend_lecture_box">
                                     <h3 className="lecture_tit">2017 기술세션.......#Back_end #Front_end #Data #Practice #Mobile</h3>
                                     <ul className="recommend_lecture_list">
-                                        {this.drawLectureDetail()}
+                                        {this.drawAutoCurationList("COURSE")}
                                     </ul>
                                     <a href="#" className="btn_unfold_list">더보기 <em>4 / 14</em></a>
                                 </section>
