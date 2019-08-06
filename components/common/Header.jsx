@@ -40,7 +40,7 @@ class Header extends Component {
                 <div className="gnb_tab_box">
                     <div className="scroll_view">
                         {/* <!-- [D] transform: translate(x, y)에서 x값으로 메뉴 위치를 조정해주세요. --> */}
-                        <div className="scroller" style={{ transform: "translate(0, 0px) translateZ(0px);" }}>
+                        <div className="scroller" style={{ transform: "translate(0, 0px) translateZ(0px)" }}>
                             <ul className="tab">
                                 {/* <!-- [D] 탭 선택 시 li에 selected 클래스 추가 --> */}
                                 <li className="selected"><a href="#">홈</a></li>
