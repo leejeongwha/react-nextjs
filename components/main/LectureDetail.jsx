@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class LectureDetail extends Component {
     render() {
         return (
-            <li key={this.props.id}>
+            <li key={this.props.id} hidden={this.props.hidden}>
                 <div className="lecture_detail">
                     <div className="thumb"><span><img src={this.props.item.contImageUrl} alt="임시 이미지" /></span></div>
                     <div className="lecture_info">

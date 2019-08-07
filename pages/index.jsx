@@ -47,16 +47,28 @@ class Main extends PureComponent {
     drawManualCurationList = (contType) => {
         return this.props.data.mainManualCurationList.filter(function (item) {
             return item.contType == contType;
-        }).map((item) =>
-            <LectureDetail key={item.contId} item={item} />
+        }).map((item, i) => {
+            let hidden = false;
+            if (i > 3) {
+                hidden = true;
+            }
+
+            return (<LectureDetail key={item.contId} item={item} hidden={hidden} />);
+        }
         );
     }
 
     drawAutoCurationList = (contType) => {
         return this.props.data.mainAutoCurationList.filter(function (item) {
             return item.contType == contType;
-        }).map((item) =>
-            <LectureDetail key={item.contId} item={item} />
+        }).map((item, i) => {
+            let hidden = false;
+            if (i > 3) {
+                hidden = true;
+            }
+
+            return (<LectureDetail key={item.contId} item={item} hidden={hidden} />);
+        }
         );
     }
 
