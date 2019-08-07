@@ -19,7 +19,15 @@ class Main extends PureComponent {
         const { data } = this.props;
         console.log(data, this.props);
 
-        //script test
+        //더보기 버튼
+        $(".btn_unfold_list").click(function (e) {
+            e.preventDefault();
+            let ul = $(this).siblings("ul");
+            ul.find("li").removeAttr("hidden");
+            $(this).remove();
+        })
+
+        //마크업에서 추가한 테스트 스크립트
         $('.attention_box .btn_unfold_list').click(function () {
             $(this).parents('.attention_box').addClass('unfold');
         });
