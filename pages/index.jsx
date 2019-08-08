@@ -7,17 +7,21 @@ import LectureDetail from '@components/main/LectureDetail';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import axios from 'axios'
+import { setLanguageSSR } from '@components/util';
+import i18next, { whitelist } from "@components/translate";
 
 class Main extends PureComponent {
     //서버 렌더링 혹은 클라이언트 렌더링 시에 호출 됨
-    static async getInitialProps({ ctx }) {
+    static async getInitialProps({ ctx, req, query }) {
+        setLanguageSSR(req, query, whitelist, i18next);
+
         const { data } = await axios.get('http://10.106.146.60:8080/main');
         return { data };
     }
 
     componentDidMount() {
         const { data } = this.props;
-        console.log(data, this.props);
+        console.log(data);
 
         //더보기 버튼
         $(".btn_unfold_list").click(function (e) {
