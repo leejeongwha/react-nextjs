@@ -1,6 +1,3 @@
-# edwith-react-web
-edwith 리액트 프로젝트
----
 ## SPEC
 - next 8.0.3
 - react 16.8.3
